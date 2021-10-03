@@ -1,0 +1,2 @@
+# Homeassistant for kursus
+
