@@ -4,6 +4,4 @@ jeg bruger:
 * Telegram for extern kommunitaion
 * Zigbee til nogle forskellige føler
 * ESP32 til egen fremstillet lysstyring via ESPHome
-
-
-
+* 
