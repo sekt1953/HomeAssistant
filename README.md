@@ -37,4 +37,10 @@
     * CC2531, hvordan opdataren jeg firmware 
     * LIDL Zigbee gateway (Silvercrest  Smart Home Gateway)
 
-# 4. Mine Automationer & Script mm..  
+# 4. Mine Automationer & Script mm.. 
+
+# 10. ESPHome projecter
+    * Min lysstyring
+    * ESP32-Cam 
+    * Klima Sensor
+    * Lys sensor
