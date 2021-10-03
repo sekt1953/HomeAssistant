@@ -5,3 +5,5 @@ jeg bruger:
 * Zigbee til nogle forskellige føler
 * ESP32 til egen fremstillet lysstyring via ESPHome
 
+
+
