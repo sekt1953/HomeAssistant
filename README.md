@@ -15,25 +15,33 @@
     * Enable I2C 
     * Installer Argon One active cooling
 
-## 1a. Installer Official add-ons
+# 2. Installer Add-ons
+## 2a. Installer Official Add-ons
     * File editor
     * Samba share
     * MariaDB
       * System Monitering
    
-## 1b. Installer Home Assistant Community Add-ons
+## 2b. Installer Home Assistant Community Add-ons
     * ESPHome
     * motionEye
     * Visual Studio Code
     * SSH & Web Terminal
 
-## 1c. Installerer Home Assistant Community Store (HACS)
+## 2c. Installerer Home Assistant Community Store (HACS)
+    * Integrationer
+      * HACS
+      * Waste Collection Schedule
+    * Frontend
+      * Light Entity Row
+      * simple-clock-card
+      * slider-entity-row
 
-# 2. Telegram, hvordan instalerer jeg Telegram Bot med polling & notification
+# 3. Telegram, hvordan instalerer jeg Telegram Bot med polling & notification
     * hvordan finder jeg bruger chat_id
     * hvordan finder jeg group chat_id
 
-# 3. Zigbee
+# 4. Zigbee
     * CC2531, hvordan opdataren jeg firmware 
     * LIDL Zigbee gateway (Silvercrest  Smart Home Gateway)
 
