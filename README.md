@@ -47,7 +47,7 @@
     * CC2531, hvordan opdataren jeg firmware 
     * LIDL Zigbee gateway (Silvercrest  Smart Home Gateway)
 ## Flashing CC2531 without CC Debugger
-[Følg denne denne vejledning](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/), jeg brugte 4 [Dupont Kabel M-F 20cm](https://ardustore.dk/produkt/dupont-breadboard-kabel), jeg lodede Male enden på connector bennene og Female enden forbandt jeg til RaspberryPi'en, USB stikket blev også forbundet til RaspberryPi'en.
+[Følg denne vejledning](https://notenoughtech.com/home-automation/flashing-cc2531-without-cc-debugger/), jeg brugte 4 [Dupont Kabel M-F 20cm](https://ardustore.dk/produkt/dupont-breadboard-kabel), jeg lodede Male enden på connector bennene og Female enden forbandt jeg til RaspberryPi'en, USB stikket blev også forbundet til RaspberryPi'en.
 ## Flashing SilverCrest Zigbee Gateway
 [Følg denne vejledning](https://zigbee.blakadder.com/Lidl_TYGWZ-01.html)
 
