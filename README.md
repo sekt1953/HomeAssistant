@@ -1,4 +1,9 @@
 # Her er min måde at instalerer Home Assistant
+## Index:
+    1. [Home Assistant OS, Supervised version i en Argon One M.2 Case](#1-installation-af-home-assistant-os-supervised-version-i-en-argon-one-m2-case)
+    2. [Add-ons](#2-installer-add-ons)
+    3. [Telegram](#3-telegram-hvordan-instalerer-jeg-telegram-bot-med-polling--notification)
+    4. [Zigbee](#4-zigbee-gateway-flashing)
 
 ## Mit valg af udstyr:
     * Raspberry Pi 4 
@@ -43,7 +48,7 @@
     * hvordan finder jeg bruger chat_id
     * hvordan finder jeg group chat_id
 
-# 4. Zigbee
+# 4. Zigbee gateway flashing
     * CC2531, hvordan opdataren jeg firmware 
     * LIDL Zigbee gateway (Silvercrest  Smart Home Gateway)
 ## Flashing CC2531 without CC Debugger
@@ -92,7 +97,7 @@ pip install pycrypto
 ```
 For resten af vejen [følg denne vejledning](https://zigbee.blakadder.com/Lidl_TYGWZ-01.html), god fornøjelse.
 
-# 4. Mine Automationer & Script mm.. 
+# 5. Mine Automationer & Script mm.. 
 
 # 10. ESPHome projecter
     * Min lysstyring
