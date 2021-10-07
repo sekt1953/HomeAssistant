@@ -56,7 +56,7 @@
 | Pin 36        | BCM 16          | DC     |
 | Pin 35        | BCM 19          | RST    |
 ## Flashing SilverCrest Zigbee Gateway
-I første del af vejlingen som jeg linker til er der et afsnit "Retrieve Root Password", her valgte jeg at monterer 3 stk dupoint connector til at forbindelse til TTL-adapteren
+I første del af vejlingen som jeg linker til er der et afsnit "Retrieve Root Password", her valgte jeg at monterer 3 stk dupoint connector til at forbindelse til TTL-adapteren, de kan blive efter opsætningen, så er de der hvis der kommer nyt software. 
 
 | Gateway    | TTL-adapteren |
 |:---:       |:---:          |
