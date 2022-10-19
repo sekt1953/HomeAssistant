@@ -69,7 +69,7 @@ Entity status: Enabled
 * YouTube Video om brug af triggers IDs [How to use Trigger IDs in Home Assistant - Tutorial](https://www.youtube.com/watch?v=fE_MYcXYwMI&t=4s)
 
 | EWeLink MS01 Iaszone started detecting motion |  When timer.finished event is fired | EWeLink MS01 Iaszone stopped detecting motion |
-|--- |--- |--- |
+|:---: |:---: |:---: |
 | ![Automations_Triggers_2022-10-19_12-48-32.png](./Images/Automations_Triggers_2022-10-19_12-48-32.png) | ![Automations_Triggers_2022-10-19_12-48-50.png](./Images/Automations_Triggers_2022-10-19_12-48-50.png) | ![Automations_Triggers_2022-10-19_12-49-01.png](./Images/Automations_Triggers_2022-10-19_12-49-01.png) |
 
 #### Conditions
@@ -79,7 +79,7 @@ Entity status: Enabled
 #### Actions
 
 |When triggered by Motion Start <br> Turn on _TZ3210_sroezl0s TS0504B Light <br> Timer: Cancel badLys| When triggered by Motion Stop <br> Timer: Start badLys|When triggered by Timer Bad <br> Turn off _TZ3210_sroezl0s TS0504B Light|
-|--- |--- |--- |
+|:---: |:---: |:---: |
 | ![Automations_Actions_Option1_2022-10-19_13-48-38.png](./Images/Automations_Actions_Option1_2022-10-19_13-48-38.png) | ![Automations_Actions_Option2_2022-10-19_13-50-16.png](./Images/Automations_Actions_Option2_2022-10-19_13-50-16.png) | ![Automations_Actions_Option3_2022-10-19_13-52-07.png](./Images/Automations_Actions_Option3_2022-10-19_13-52-07.png) |
 
 #### Automation for Badeværelse lys i YAML format

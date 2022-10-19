@@ -84,7 +84,7 @@ I første del af vejlingen som jeg linker til er der et afsnit "Retrieve Root Pa
 
 Serial_adapteren skal snakke med en tty terminal, her har jeg valgt at bruge Putty for Linux. Med Putty er det nemt at sætte de rigtiǵe indstillinger for samtalen, her er mine valg:  
 
-```
+```text
 Settings: 
     Windows -> Font -> Font used for ordinary text ->
         Client: Ubuntu Mono 16
