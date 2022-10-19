@@ -64,6 +64,8 @@ Entity status: Enabled
 
 #### Triggers
 
+* YouTube Video [How to use Trigger IDs in Home Assistant - Tutorial](https://www.youtube.com/watch?v=fE_MYcXYwMI&t=4s)
+
 | EWeLink MS01 Iaszone started detecting motion |  When timer.finished event is fired | EWeLink MS01 Iaszone stopped detecting motion |
 |--- |--- |--- |
 |![](./Images/Automations%20Triggers%202022-10-19%2012-48-32.png)|![](./Images/Automations%20Triggers%202022-10-19%2012-48-50.png)|![](./Images/Automations%20Triggers%202022-10-19%2012-49-01.png) |
