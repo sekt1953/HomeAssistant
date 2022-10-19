@@ -65,13 +65,13 @@ Entity status: Enabled
 #### Triggers
 
 | EWeLink MS01 Iaszone started detecting motion |  When timer.finished event is fired | EWeLink MS01 Iaszone stopped detecting motion |
-|---|---|---|
+|--- |--- |--- |
 |![](./Images/Automations%20Triggers%202022-10-19%2012-48-32.png)|![](./Images/Automations%20Triggers%202022-10-19%2012-48-50.png)|![](./Images/Automations%20Triggers%202022-10-19%2012-49-01.png) |
 
 
 |When triggered by Motion Start <br> Turn on _TZ3210_sroezl0s TS0504B Light <br> Timer: Cancel badLys| When triggered by Motion Stop <br> Timer: Start badLys|When triggered by Timer Bad <br> Turn off _TZ3210_sroezl0s TS0504B Light|
-|---|---|---|
-| ![](./Images/Automations_Actions_Option1_%202022-10-19_12-52-12.png)|![](./Images/Automations%20Actions%20Option2%202022-10-19%2012-52-29.png) | ![](./Images/Automations%20Actions%20Option3%202022-10-19%2012-52-47.png)|
+|--- |--- |--- |
+| ![](./Images/Automations_Actions_Option1_%202022-10-19_13-48-38.png)|![](./Images/Automations_Actions_Option2_2022-10-19_13-50-16.png) | ![](./Images/Automations%20Actions%20Option3_2022-10-19_13-52-07.png)|
 
 #### Automation for Badeværelse lys i YAML format
 
