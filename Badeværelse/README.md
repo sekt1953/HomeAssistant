@@ -71,7 +71,7 @@ Entity status: Enabled
 
 |When triggered by Motion Start <br> Turn on _TZ3210_sroezl0s TS0504B Light <br> Timer: Cancel badLys| When triggered by Motion Stop <br> Timer: Start badLys|When triggered by Timer Bad <br> Turn off _TZ3210_sroezl0s TS0504B Light|
 |---|---|---|
-| ![](./Images/Automations%20Actions%20Option1%20%202022-10-19%2012-52-12.png) | ![](./Images/Automations%20Actions%20Option2%202022-10-19%2012-52-29.png) | ![](./Images/Automations%20Actions%20Option3%202022-10-19%2012-52-47.png)|
+| ![](./Images/Automations_Actions_Option1_%202022-10-19_12-52-12.png)|![](./Images/Automations%20Actions%20Option2%202022-10-19%2012-52-29.png) | ![](./Images/Automations%20Actions%20Option3%202022-10-19%2012-52-47.png)|
 
 #### Automation for Badeværelse lys i YAML format
 
