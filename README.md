@@ -114,6 +114,8 @@ For resten af vejen [følg denne vejledning](https://zigbee.blakadder.com/Lidl_T
 
 ## 5. Mine Automationer & Script mm
 
+### [Badeværelse](./Badev%C3%A6relse/README.md) 
+
 ## 10. ESPHome projecter
 
     * Min lysstyring
