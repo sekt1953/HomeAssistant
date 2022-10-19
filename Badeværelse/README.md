@@ -68,6 +68,7 @@ Entity status: Enabled
 |--- |--- |--- |
 |![](./Images/Automations%20Triggers%202022-10-19%2012-48-32.png)|![](./Images/Automations%20Triggers%202022-10-19%2012-48-50.png)|![](./Images/Automations%20Triggers%202022-10-19%2012-49-01.png) |
 
+#### Actions
 
 |When triggered by Motion Start <br> Turn on _TZ3210_sroezl0s TS0504B Light <br> Timer: Cancel badLys| When triggered by Motion Stop <br> Timer: Start badLys|When triggered by Timer Bad <br> Turn off _TZ3210_sroezl0s TS0504B Light|
 |--- |--- |--- |
