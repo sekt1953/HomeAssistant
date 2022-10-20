@@ -80,6 +80,7 @@ I min nye installation har jeg valgt at bruge denne gateway fra LIDL
 
 ## 5. Mine Automationer & Script mm
 
+* [Kode eksempler](./Kode_Eksempler/)
 * [Badeværelse](./Badev%C3%A6relse/README.md)
 * [Køkken](./K%C3%B8kken/README.md)
   * [PWM-LightControler](./K%C3%B8kken/PWM-LightControler/)
