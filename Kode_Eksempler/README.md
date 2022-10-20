@@ -130,6 +130,7 @@ action:
             device_id: 846853d182c407d6ddd2e4f6cbd3dbb0
             entity_id: light.tz3210_sroezl0s_ts0504b_light
             domain: light
+            brightness_pct: 3
       - conditions:
           - condition: trigger
             id: Hold Action
@@ -138,6 +139,10 @@ action:
             device_id: 846853d182c407d6ddd2e4f6cbd3dbb0
             entity_id: light.tz3210_sroezl0s_ts0504b_light
             domain: light
+  - service: timer.start
+    data: {}
+    target:
+      entity_id: timer.badlys
 mode: single
 ```
 
