@@ -146,7 +146,7 @@ mode: single
 
 ### Edit in visual editor
 
-![EditInVisualEditor_2022-10-20_23-54-00.png](./Images/EditInVisualEditor_2022-10-20_23-54-00.png)  
+![EditInVisualEditor_2022-10-21_09-14-39.png](./Images/EditInVisualEditor_2022-10-21_09-14-39.png)  
 
 **Triggers**  
 ![Trigger_PressAction_2022-10-20_22-47-15.png](./Images/Trigger_PressAction_2022-10-20_22-47-15.png)  
@@ -157,4 +157,3 @@ mode: single
 ![Action_Option1_2022-10-20_22-48-23.png](./Images/Action_Option1_2022-10-20_22-48-23.png)  
 ![Action_Option2_2022-10-20_22-48-40.png](./Images/Action_Option2_2022-10-20_22-48-40.png)  
 ![Action_Option3_2022-10-20_22-49-19.png](./Images/Action_Option3_2022-10-20_22-49-19.png)  
-![Acton_Timer_Start_badLys_2022-10-20_22-46-46.png](./Images/Acton_Timer_Start_badLys_2022-10-20_23-46-27.png)  

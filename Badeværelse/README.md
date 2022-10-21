@@ -80,7 +80,7 @@ Entity status: Enabled
 
 | When triggered by Motion Start | When triggered by Motion Stop | When triggered by Timer finished |
 |:---: |:---: |:---: |
-| ![Automations_Actions_Option1_2022-10-19_13-48-38.png](./Images/Automations_Actions_Option1_2022-10-19_13-48-38.png) | ![Automations_Actions_Option2_2022-10-19_13-50-16.png](./Images/Automations_Actions_Option2_2022-10-19_13-50-16.png) | ![Automations_Actions_Option3_2022-10-19_13-52-07.png](./Images/Automations_Actions_Option3_2022-10-19_13-52-07.png) |
+| ![Automations_Actions_Option1_2022-10-19_13-48-38.png](./Images/Automations_Actions_Option1_2022-10-19_13-48-38.png) | ![Automations_Actions_Option2_2022-10-21_09-21-51.png](./Images/Automations_Actions_Option2_2022-10-21_09-21-51.png) | ![Automations_Actions_Option3_2022-10-19_13-52-07.png](./Images/Automations_Actions_Option3_2022-10-19_13-52-07.png) |
 
 #### Automation for Badeværelse lys i YAML format
 
@@ -126,7 +126,8 @@ action:
             id: Motion Stop
         sequence:
           - service: timer.start
-            data: {}
+            data:
+              duration: "30"
             target:
               entity_id: timer.badlys
       - conditions:
