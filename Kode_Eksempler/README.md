@@ -21,11 +21,11 @@ Her er et eksemple på brug af **zha_event** sammen med **Trigger ID**, SNZB-01 
 
 Kodeeksempel her: [Sonoff SNZB-01 **zha_event**](./Sonoff_SNZB-01.md)
 
-## Sonoff Zigbee Motion Sensor SNZB-03
+## ~~Sonoff Zigbee Motion Sensor SNZB-03~~
 
 Her er et eksample om brug af **Motion Sensor**, **Trigger ID** og Timers that Survive a Restart in Home Assistant  
 
-[Sonoff SNZB-03](./Sonoff_SNZB-03.md)
+[~~Sonoff SNZB-03~~](./Sonoff_SNZB-03.md)
 
 ## Times of the Day Sensor
 
