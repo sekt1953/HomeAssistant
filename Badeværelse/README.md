@@ -47,20 +47,11 @@ cards:
         secondary_info: last-changed
 ```
 
-### Helper Timer
+### Helpers - (Settings -> Device & Services -> Helpers)
 
-```yaml
-Name:   badlys
-Icon:   mdi:timer
-Duration:  0:00:30
-Entity ID: timer.badlys
-Area:  Badeværelse
+![Helper_BadLysTimeout_2022-10-21_09-40-01.png](./Images/Helper_BadLysTimeout_2022-10-21_09-40-01.png)
 
-Advanced settings
-Entity status: Enabled
-```
-
-### Automation
+### Automation - Edit in visual editor
 
 ![Automations_2022-10-19_12-48-11.png](./Images/Automations_2022-10-19_12-48-11.png)
 
@@ -68,9 +59,11 @@ Entity status: Enabled
 
 * YouTube Video om brug af triggers IDs [How to use Trigger IDs in Home Assistant - Tutorial](https://www.youtube.com/watch?v=fE_MYcXYwMI&t=4s)
 
-| EWeLink MS01 Iaszone started detecting motion |  When timer.finished event is fired | EWeLink MS01 Iaszone stopped detecting motion |
-|:---: |:---: |:---: |
-| ![Automations_Triggers_2022-10-19_12-48-32.png](./Images/Automations_Triggers_2022-10-19_12-48-32.png) | ![Automations_Triggers_2022-10-19_12-48-50.png](./Images/Automations_Triggers_2022-10-19_12-48-50.png) | ![Automations_Triggers_2022-10-19_12-49-01.png](./Images/Automations_Triggers_2022-10-19_12-49-01.png) |
+![Automations_Triggers_2022-10-19_12-48-32.png](./Images/Automations_Triggers_2022-10-19_12-48-32.png)  
+
+![Automations_Triggers_2022-10-19_12-48-50.png](./Images/Automations_Triggers_2022-10-19_12-48-50.png)
+
+![Automations_Triggers_2022-10-19_12-49-01.png](./Images/Automations_Triggers_2022-10-19_12-49-01.png)
 
 #### Conditions
 
@@ -78,11 +71,13 @@ Entity status: Enabled
 
 #### Actions
 
-| When triggered by Motion Start | When triggered by Motion Stop | When triggered by Timer finished |
-|:---: |:---: |:---: |
-| ![Automations_Actions_Option1_2022-10-19_13-48-38.png](./Images/Automations_Actions_Option1_2022-10-19_13-48-38.png) | ![Automations_Actions_Option2_2022-10-21_09-21-51.png](./Images/Automations_Actions_Option2_2022-10-21_09-21-51.png) | ![Automations_Actions_Option3_2022-10-19_13-52-07.png](./Images/Automations_Actions_Option3_2022-10-19_13-52-07.png) |
+![Automations_Actions_Option1_2022-10-19_13-48-38.png](./Images/Automations_Actions_Option1_2022-10-19_13-48-38.png)  
 
-#### Automation for Badeværelse lys i YAML format
+![Automations_Actions_Option2_2022-10-21_09-21-51.png](./Images/Automations_Actions_Option2_2022-10-21_09-21-51.png)  
+
+![Automations_Actions_Option3_2022-10-19_13-52-07.png](./Images/Automations_Actions_Option3_2022-10-19_13-52-07.png)  
+
+#### Automation - Edit in YAML
 
 ```yaml
 alias: Bad lys OnOff
