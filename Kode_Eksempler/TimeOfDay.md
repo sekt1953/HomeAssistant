@@ -60,7 +60,7 @@ square: false
 binary_sensor: !include_dir_merge_list ./binary_sensor_merge_list
 ```
 
-**binary_sensor_merge_list/times_of_the_day.yaml**
+**/config/binary_sensor_merge_list/times_of_the_day.yaml**
 
 ```yaml
  - platform: tod
