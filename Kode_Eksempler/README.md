@@ -29,6 +29,6 @@ Her er et eksample om brug af **Motion Sensor**, **Trigger ID** og Timers that S
 
 ## Times of the Day Sensor
 
-Her en måde at definerer TOD Sensor på
+Her finder du [Home Assistant // Times of the Day manual](https://www.home-assistant.io/integrations/tod/), og her er min installation med fil opsplitning, som måske er på vej væk, men jeg kan nu godt lide det over blik det giver:
 
-[Times of the Day Sensor](./TimeOfDay.md)  
+[Times of the Day Sensor, på min måde](./TimeOfDay.md)  
