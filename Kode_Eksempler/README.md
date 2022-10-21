@@ -26,3 +26,9 @@ Kodeeksempel her: [Sonoff SNZB-01 **zha_event**](./Sonoff_SNZB-01.md)
 Her er et eksample om brug af **Motion Sensor**, **Trigger ID** og Timers that Survive a Restart in Home Assistant  
 
 [Sonoff SNZB-03](./Sonoff_SNZB-03.md)
+
+## Times of the Day Sensor
+
+Her en måde at definerer TOD Sensor på
+
+[Times of the Day Sensor](./TimeOfDay.md)  
