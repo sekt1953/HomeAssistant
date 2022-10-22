@@ -22,15 +22,15 @@ Denne lysstyring har en Sonoff Wireless Switch SNZB-01 uden for døren, en Sonof
 
 ## Lovelace Demo Lysstyring
 
-![](./Images/Demo_Lysstyring_2022-10-22_17-53-09.png)
+![Lovelace_2022-10-22_22-33-45.png](./Images/Demo_Lysstyring/Lovelace_2022-10-22_22-33-45.png)
 
 ### Lovelace Demo Lysstyring Edit in visual editor
 
-![Demo_Lysstyring_Love_2022-10-22_17-54-54.png](./Images/Demo_Lysstyring_Love_2022-10-22_17-54-54.png)
-![Demo_Lysstyring_Love_2022-10-22_17-55-03.png](./Images/Demo_Lysstyring_Love_2022-10-22_17-55-03.png)
-![Demo_Lysstyring_Love_2022-10-22_17-55-11.png](./Images/Demo_Lysstyring_Love_2022-10-22_17-55-11.png)
-![Demo_Lysstyring_Love_2022-10-22_17-55-17.png](./Images/Demo_Lysstyring_Love_2022-10-22_17-55-17.png)
-![Demo_Lysstyring_Love_2022-10-22_17-55-24.png](./Images/Demo_Lysstyring_Love_2022-10-22_17-55-24.png)
+![Lovelace1_2022-10-22_22-34-10.png](./Images/Demo_Lysstyring/Lovelace1_2022-10-22_22-34-10.png)
+![Lovelace2_2022-10-22_22-34-19.png](./Images/Demo_Lysstyring/Lovelace2_2022-10-22_22-34-19.png)
+![Lovelace3_2022-10-22_22-34-26.png](./Images/Demo_Lysstyring/Lovelace3_2022-10-22_22-34-26.png)
+![Lovelace4_2022-10-22_22-34-35.png](./Images/Demo_Lysstyring/Lovelace4_2022-10-22_22-34-35.png)
+![Lovelace5_2022-10-22_22-34-46.png](./Images/Demo_Lysstyring/Lovelace5_2022-10-22_22-34-46.png)
 
 ### Lovelace Demo Lysstyring Edit in YAML
 
@@ -45,6 +45,7 @@ cards:
   - type: entities
     entities:
       - entity: light.ikea_e27_b7a411fe_level_light_color_on_off
+        secondary_info: brightness
     title: Ikea E27 LED 1924G9 - 704.391.58
     state_color: true
   - type: entities
@@ -52,75 +53,75 @@ cards:
       - entity: binary_sensor.demo_ms01_iaszone_2
         name: eWeLink MS01
         secondary_info: last-changed
-      - entity: sensor.demo_ms01_battery_2
-        name: eWeLink  MS01 Battery
     state_color: true
     title: Sonoff Motion Sensor SNZB-03
   - type: entities
     entities:
       - entity: timer.demo_lys_timeout
         name: Helper Demo Lys Timeout
+        secondary_info: last-updated
     state_color: true
   - type: entities
     entities:
       - entity: sensor.ewelink_wb01_19019723_power
-      - entity: button.ewelink_wb01_19019723_identify
-    title: Sonoff Wireless Switch SNZB-01
+      - entity: sensor.ewelink_wb01_19019723_power
+    title: Battery status
     state_color: true
+
 ```
 
 ## Helper Demo Lys Timeout
 
-![Demo_Lysstyring_Helper_2022-10-22_20-49-21.png](./Images/Demo_Lysstyring_Helper_2022-10-22_20-49-21.png)
+![Helper_2022-10-22_20-49-21.png](./Images/Demo_Lysstyring/Helper_2022-10-22_20-49-21.png)
 
 NB!! Fluenet i Restore feltet vil få timeren til at fortsætte efter en restart af Home Assistant, en god ting, se mere i timer dokumentationen link herunder.  
 Home Assistant's Timer Dokumentation er [HER!!!](https://www.home-assistant.io/integrations/timer/)
 
 ## Automation
 
-![Demo_Lysstyring_Auto_2022-10-22_19-20-55.png](./Images/Demo_Lysstyring_Auto_2022-10-22_19-20-55.png)
+![Automation_2022-10-22_19-20-55.png](./Images/Demo_Lysstyring/Automation_2022-10-22_19-20-55.png)
 
 ### Automation  **Demo Lys Styring** Edit in visual editor
 
 #### Triggers
 
-![Demo_Lysstyring_Trig_2022-10-22_19-34-00.png](./Images/Demo_Lysstyring_Trig_2022-10-22_19-34-00.png)  
-![Demo_Lysstyring_Trig_2022-10-22_19-34-16.png](./Images/Demo_Lysstyring_Trig_2022-10-22_19-34-16.png)
-![Demo_Lysstyring_Trig_2022-10-22_19-34-32.png](./Images/Demo_Lysstyring_Trig_2022-10-22_19-34-32.png)
-![Demo_Lysstyring_Trig_2022-10-22_19-34-48.png](./Images/Demo_Lysstyring_Trig_2022-10-22_19-34-48.png)
-![Demo_Lysstyring_Trig_2022-10-22_19-35-02.png](./Images/Demo_Lysstyring_Trig_2022-10-22_19-35-02.png)
-![Demo_Lysstyring_Trig_2022-10-22_19-35-57.png](./Images/Demo_Lysstyring_Trig_2022-10-22_19-35-57.png)
+![Automation_Trigger_2022-10-22_19-34-00.png](./Images/Demo_Lysstyring/Automation_Trigger_2022-10-22_19-34-00.png)  
+![Automation_Trigger_2022-10-22_19-34-16.png](./Images/Demo_Lysstyring/Automation_Trigger_2022-10-22_19-34-16.png)  
+![Automation_Trigger_2022-10-22_19-34-32.png](./Images/Demo_Lysstyring/Automation_Trigger_2022-10-22_19-34-32.png)  
+![Automation_Trigger_2022-10-22_19-34-48.png](./Images/Demo_Lysstyring/Automation_Trigger_2022-10-22_19-34-48.png)  
+![Automation_Trigger_2022-10-22_19-35-02.png](./Images/Demo_Lysstyring/Automation_Trigger_2022-10-22_19-35-02.png)  
+![Automation_Trigger_2022-10-22_19-35-57.png](./Images/Demo_Lysstyring/Automation_Trigger_2022-10-22_19-35-57.png)  
 
 #### Actions
 
 ##### Option 1:
 
-![Demo_Lysstyring_Action1_2022-10-22_20-04-53.png](./Images/Demo_Lysstyring_Action1_2022-10-22_20-04-53.png)  
-![Demo_Lysstyring_Action1_2022-10-22_20-05-44.png](./Images/Demo_Lysstyring_Action1_2022-10-22_20-05-44.png)  
-![Demo_Lysstyring_Action1_2022-10-22_20-06-02.png](./Images/Demo_Lysstyring_Action1_2022-10-22_20-06-02.png)  
+![Automation_Option1_2022-10-22_20-04-53.png](./Images/Demo_Lysstyring/Automation_Option1_2022-10-22_20-04-53.png)  
+![Automation_Option1_2022-10-22_20-05-44.png](./Images/Demo_Lysstyring/Automation_Option1_2022-10-22_20-05-44.png)  
+![Automation_Option1_2022-10-22_20-06-02.png](./Images/Demo_Lysstyring/Automation_Option1_2022-10-22_20-06-02.png)  
 
 ##### Option 2:
 
-![](./Images/Demo_Lysstyring_Action2_2022-10-22_20-10-00.png)
+![Automation_Option2_2022-10-22_20-10-00.png](./Images/Demo_Lysstyring/Automation_Option2_2022-10-22_20-10-00.png)  
 
 ##### Option 3:
 
-![Demo_Lysstyring_Action3_2022-10-22_20-14-01.png](./Images/Demo_Lysstyring_Action3_2022-10-22_20-14-01.png)
+![Automation_Option3_2022-10-22_20-14-01.png](./Images/Demo_Lysstyring/Automation_Option3_2022-10-22_20-14-01.png)  
 
 ##### Option 4:
 
-![Demo_Lysstyring_Action4_2022-10-22_20-15-52.png](./Images/Demo_Lysstyring_Action4_2022-10-22_20-15-52.png)  
-![Demo_Lysstyring_Action4_2022-10-22_20-16-08.png](./Images/Demo_Lysstyring_Action4_2022-10-22_20-16-08.png)  
+![](./Images/Demo_Lysstyring/Automation_Option4_2022-10-22_20-15-52.png)  
+![](./Images/Demo_Lysstyring/Automation_Option4_2022-10-22_20-16-08.png)  
 
 ##### Option 5:
 
-![Demo_Lysstyring_Action5_2022-10-22_20-18-35.png](./Images/Demo_Lysstyring_Action5_2022-10-22_20-18-35.png)
-![Demo_Lysstyring_Action5_2022-10-22_20-18-59.png](./Images/Demo_Lysstyring_Action5_2022-10-22_20-18-59.png)
+![Automation_Option5_2022-10-22_20-18-35.png](./Images/Demo_Lysstyring/Automation_Option5_2022-10-22_20-18-35.png)  
+![Automation_Option5_2022-10-22_20-18-59.png](./Images/Demo_Lysstyring/Automation_Option5_2022-10-22_20-18-59.png)  
 
 ##### Option 6:
 
-![Demo_Lysstyring_Action6_2022-10-22_20-22-13.png](./Images/Demo_Lysstyring_Action6_2022-10-22_20-22-13.png)  
-![Demo_Lysstyring_Action6_2022-10-22_20-22-47.png](./Images/Demo_Lysstyring_Action6_2022-10-22_20-22-47.png)  
+![](./Images/Demo_Lysstyring/Automation_Option6_2022-10-22_20-22-13.png)  
+![](./Images/Demo_Lysstyring/Automation_Option6_2022-10-22_20-22-47.png)  
 
 ### Automation  **Demo Lys Styring** Edit in YAML
 
