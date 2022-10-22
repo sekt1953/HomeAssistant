@@ -12,7 +12,7 @@
 ![Demo_Lysstyring_Love_2022-10-22_17-55-17.png](./Images/Demo_Lysstyring_Love_2022-10-22_17-55-17.png)
 ![Demo_Lysstyring_Love_2022-10-22_17-55-24.png](./Images/Demo_Lysstyring_Love_2022-10-22_17-55-24.png)
 
-### Lovelace Demo Lysstyring Edit in YAML 
+### Lovelace Demo Lysstyring Edit in YAML
 
 ```yaml
 square: false
@@ -52,6 +52,32 @@ cards:
 ## Automation
 
 ![Demo_Lysstyring_Auto_2022-10-22_19-20-55.png](./Images/Demo_Lysstyring_Auto_2022-10-22_19-20-55.png)
+
+### Automation  **Demo Lys Styring** Edit in visual editor
+
+#### Triggers
+
+![Demo_Lysstyring_Trig_2022-10-22_19-34-00.png](./Images/Demo_Lysstyring_Trig_2022-10-22_19-34-00.png)  
+
+![Demo_Lysstyring_Trig_2022-10-22_19-34-16.png](./Images/Demo_Lysstyring_Trig_2022-10-22_19-34-16.png)
+![Demo_Lysstyring_Trig_2022-10-22_19-34-32.png](./Images/Demo_Lysstyring_Trig_2022-10-22_19-34-32.png)
+![Demo_Lysstyring_Trig_2022-10-22_19-34-48.png](./Images/Demo_Lysstyring_Trig_2022-10-22_19-34-48.png)
+![Demo_Lysstyring_Trig_2022-10-22_19-35-02.png](./Images/Demo_Lysstyring_Trig_2022-10-22_19-35-02.png)
+![Demo_Lysstyring_Trig_2022-10-22_19-35-57.png](./Images/Demo_Lysstyring_Trig_2022-10-22_19-35-57.png)
+
+#### Actions
+
+##### Option 1:
+
+![Demo_Lysstyring_Action1_2022-10-22_19-45-30.png](./Images/Demo_Lysstyring_Action1_2022-10-22_19-45-30.png)
+![Demo_Lysstyring_Action2_2022-10-22_19-45-47.png](./Images/Demo_Lysstyring_Action2_2022-10-22_19-45-47.png)
+
+##### Option 2:
+
+![](./Images)
+![](./Images)
+![](./Images)
+![](./Images)
 
 ### Automation  **Demo Lys Styring** Edit in YAML
 
