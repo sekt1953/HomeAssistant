@@ -93,12 +93,8 @@ cards:
 
 ##### Option 6:
 
-![](./Images)
-![](./Images)
-![](./Images)
-![](./Images)
-![](./Images)
-![](./Images)
+![Demo_Lysstyring_Action6_2022-10-22_20-22-13.png](./Images/Demo_Lysstyring_Action6_2022-10-22_20-22-13.png)  
+![Demo_Lysstyring_Action6_2022-10-22_20-22-47.png](./Images/Demo_Lysstyring_Action6_2022-10-22_20-22-47.png)  
 
 ### Automation  **Demo Lys Styring** Edit in YAML
 
