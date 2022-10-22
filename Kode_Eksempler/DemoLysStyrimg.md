@@ -18,7 +18,7 @@ Denne lysstyring har en Sonoff Wireless Switch SNZB-01 uden for døren, en Sonof
   * Når SNZB-03 er i clear mode vil den starte timeren
     * bliver SNZB-03 påvirket igen vil fimeren nulstille.
     * bliber SNZB-03 ikke påvirket igen vil lyset slukke når timeren løber ud.
-
+ 
 
 ## Lovelace Demo Lysstyring
 
