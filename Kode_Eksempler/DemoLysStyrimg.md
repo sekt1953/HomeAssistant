@@ -69,11 +69,23 @@ cards:
 
 ##### Option 1:
 
-![Demo_Lysstyring_Action1_2022-10-22_19-45-30.png](./Images/Demo_Lysstyring_Action1_2022-10-22_19-45-30.png)
-![Demo_Lysstyring_Action2_2022-10-22_19-45-47.png](./Images/Demo_Lysstyring_Action2_2022-10-22_19-45-47.png)
+![Demo_Lysstyring_Action1_2022-10-22_20-04-53.png](./Images/Demo_Lysstyring_Action1_2022-10-22_20-04-53.png)  
+![Demo_Lysstyring_Action1_2022-10-22_20-05-44.png](./Images/Demo_Lysstyring_Action1_2022-10-22_20-05-44.png)  
+![Demo_Lysstyring_Action1_2022-10-22_20-06-02.png](./Images/Demo_Lysstyring_Action1_2022-10-22_20-06-02.png)  
 
 ##### Option 2:
 
+![](./Images/Demo_Lysstyring_Action2_2022-10-22_20-10-00.png)
+
+##### Option 3:
+
+![](./Images)
+![](./Images)
+![](./Images)
+![](./Images)
+![](./Images)
+![](./Images)
+![](./Images)
 ![](./Images)
 ![](./Images)
 ![](./Images)
