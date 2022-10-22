@@ -1,5 +1,25 @@
 # Demo Lysstyring med SNZB-01 & SNZB-03
 
+Denne lysstyring har en Sonoff Wireless Switch SNZB-01 uden for døren, en Sonoff Motion Sensor SNZB-03 inde i lokalet og en lyskilde Ikea E27 LED1924G9.
+
+* Et enkelt tryk på SNZB-01
+  * Udløser toggle af lyskilden Ikea E27 og starter en timer "Demo Lys Timeout".
+    * går du ikke ind i rummet og påvirker Motion Sensoren SNZB-03, vil lyses slukkes når timeren løber ud.
+    * går du ind i rummet og påvirker Motion Sensoren SNZB-03, vil timeren blive nulstillet og Motion Sensoren SNZB-03 vil overtage styringen.
+* Et dobbelt tryk på SNZB-01
+  * Vil tænde lyskilden med en lysstyrke på 50%, og starte timeren "Demo Lys Timeout"
+    * går du ikke ind i rummet og påvirker Motion Sensoren SNZB-03, vil lyses slukkes når timeren løber ud.
+    * går du ind i rummet og påvirker Motion Sensoren SNZB-03, vil timeren blive nulstillet og Motion Sensoren SNZB-03 vil overtage styringen.
+* Et langt tryk på SNZB-01
+  * Vil nulstille timeren, og slukke lyset
+    * NB!! går du ind i rummet før SNZB-03 er i clear tilstand vil lyset ikke tænde.
+* Går du ind i rummet ude at påvirke trykknappen SNZB-01
+  * Vil lyset tænde med en lysstyrke på 3% 
+  * Når SNZB-03 er i clear mode vil den starte timeren
+    * bliver SNZB-03 påvirket igen vil fimeren nulstille.
+    * bliber SNZB-03 ikke påvirket igen vil lyset slukke når timeren løber ud.
+
+
 ## Lovelace Demo Lysstyring
 
 ![](./Images/Demo_Lysstyring_2022-10-22_17-53-09.png)
@@ -48,6 +68,12 @@ cards:
     title: Sonoff Wireless Switch SNZB-01
     state_color: true
 ```
+
+## Helper Demo Lys Timeout
+
+![Demo_Lysstyring_Helper_2022-10-22_20-49-21.png](./Images/Demo_Lysstyring_Helper_2022-10-22_20-49-21.png)
+
+Mere om Helper timer [HER](https://www.home-assistant.io/integrations/timer/)
 
 ## Automation
 
