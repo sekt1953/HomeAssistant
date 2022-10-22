@@ -6,7 +6,7 @@
   * [How to use Trigger IDs in Home Assistant - Tutorial](https://www.youtube.com/watch?v=fE_MYcXYwMI "Smart Home Junkie")
   * [Short: How Trigger IDs work In Home Assistant](https://www.youtube.com/watch?v=xq6-WMbqElk "Smart Home Junkie")
 * Motion Sensor
-  * [How To Use Motion Sensors Correctly In Home Assistant](https://www.youtube.com/watch?v=m_fbo_Co-TU "Smart Home Junkie")
+  * [How To Use Motion Sensors Correctly In Home Assistant](https://www.youtube.com/watch?v=m_fbo_Co-TU "Smart Home Junkie")  
   * [How To Use Motion Sensors Correctly In Home Assistant](https://www.youtube.com/watch?v=m_fbo_Co-TU&list=PLKuGrHcHLKMhNW_atbfztVJAbO_L6Osgy "Smart Home Junkie")
 * Timers
   * [How To use Timers that Survive a Restart in Home Assistant](https://www.youtube.com/watch?v=usg8cB8sd8E "Smart Home Junkie")
