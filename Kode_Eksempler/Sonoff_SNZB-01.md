@@ -7,7 +7,7 @@
 * Sæt Event to subscribe to: **zha_event**
   * og klik på **[START LISTENING]**
 
-Du vil nu se noget der ser ud som vist herunder
+Du vil nu se noget der ser ud som vist herunder, **device_id:** kan du bruge til at identificere din zha enhed & **command:** til at identificere den funktion der er udløst.
 
 ### Press Action
 
