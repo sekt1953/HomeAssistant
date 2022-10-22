@@ -81,7 +81,30 @@ Her to oplysninger vi kan bruge til at lave en Automation:
   * "on"
   * "off"
 
-## Edit Automation
+## Automation
+
+![](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Automation_2022-10-22_23-17-51.png)
+
+### Edit in visual editor
+
+#### Triggers
+
+![Trigger_PressAction_2022-10-20_22-47-15.png](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Trigger_PressAction_2022-10-20_22-47-15.png)  
+![Trigger_DoublePressAction_2022-10-20_22-47-30.png](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Trigger_DoublePressAction_2022-10-20_22-47-30.png)  
+![Trigger_HoldAction_2022-10-20_22-47-53.png](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Trigger_HoldAction_2022-10-20_22-47-53.png)  
+
+### Actions  
+
+#### Option 1:
+![Action_Option1_2022-10-20_22-48-23.png](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Action_Option1_2022-10-20_22-48-23.png)   
+
+#### Option 2:
+
+![Action_Option2_2022-10-20_22-48-40.png](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Action_Option2_2022-10-20_22-48-40.png)  
+
+#### Option 3:
+
+![Action_Option3_2022-10-20_22-49-19.png](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Action_Option3_2022-10-20_22-49-19.png)  
 
 ### Edit in YAML
 
@@ -143,17 +166,3 @@ action:
       entity_id: timer.badlys
 mode: single
 ```
-
-### Edit in visual editor
-
-![EditInVisualEditor_2022-10-21_09-14-39.png](./Images/EditInVisualEditor_2022-10-21_09-14-39.png)  
-
-**Triggers**  
-![Trigger_PressAction_2022-10-20_22-47-15.png](./Images/Trigger_PressAction_2022-10-20_22-47-15.png)  
-![Trigger_DoublePressAction_2022-10-20_22-47-30.png](./Images/Trigger_DoublePressAction_2022-10-20_22-47-30.png)  
-![Trigger_HoldAction_2022-10-20_22-47-53.png](./Images/Trigger_HoldAction_2022-10-20_22-47-53.png)  
-
-**Actions**  
-![Action_Option1_2022-10-20_22-48-23.png](./Images/Action_Option1_2022-10-20_22-48-23.png)  
-![Action_Option2_2022-10-20_22-48-40.png](./Images/Action_Option2_2022-10-20_22-48-40.png)  
-![Action_Option3_2022-10-20_22-49-19.png](./Images/Action_Option3_2022-10-20_22-49-19.png)  
