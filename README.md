@@ -83,6 +83,7 @@ I min nye installation har jeg valgt at bruge denne gateway fra LIDL
 
 * [Kode eksempler](./Kode_Eksempler/)
   * [Sonoff **SNZB-01**, med brug af **zha_event**](./Kode_Eksempler/Sonoff_SNZB-01.md)
+  * [](/Kode_Eksempler/DemoLysStyrimg.md)
 * [Badeværelse](./Badev%C3%A6relse/README.md)
 * [Køkken](./K%C3%B8kken/README.md)
   * [PWM-LightControler](./K%C3%B8kken/PWM-LightControler/)
