@@ -3,12 +3,12 @@
 ## Youtube
 
 * Trigger ID
-  * [How to use Trigger IDs in Home Assistant - Tutorial](https://www.youtube.com/watch?v=fE_MYcXYwMI)
-  * [Short: How Trigger IDs work In Home Assistant](https://www.youtube.com/watch?v=xq6-WMbqElk)
+  * [How to use Trigger IDs in Home Assistant - Tutorial](https://www.youtube.com/watch?v=fE_MYcXYwMI "Smart Home Junkie")
+  * [Short: How Trigger IDs work In Home Assistant](https://www.youtube.com/watch?v=xq6-WMbqElk "Smart Home Junkie")
 * Motion Sensor
-  * [How To Use Motion Sensors Correctly In Home Assistant](https://www.youtube.com/watch?v=m_fbo_Co-TU)
+  * [How To Use Motion Sensors Correctly In Home Assistant](https://www.youtube.com/watch?v=m_fbo_Co-TU "Smart Home Junkie")
 * Timers
-  * [How To use Timers that Survive a Restart in Home Assistant](https://www.youtube.com/watch?v=usg8cB8sd8E)
+  * [How To use Timers that Survive a Restart in Home Assistant](https://www.youtube.com/watch?v=usg8cB8sd8E "Smart Home Junkie")
   
 ## Sonoff Zigbee Wireless Switch SNZB-01
 
