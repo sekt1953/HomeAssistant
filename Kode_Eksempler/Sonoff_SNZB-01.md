@@ -81,6 +81,41 @@ Her to oplysninger vi kan bruge til at lave en Automation:
   * "on"
   * "off"
 
+## Lovelace
+
+![](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Lovelace0_2022-10-22%2023-32-17.png)
+
+### Edit in visual editor
+
+![](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Lovelace1_2022-10-22%2023-32-39.png)
+![](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Lovelace2_2022-10-22%2023-32-53.png)
+![](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Lovelace3_2022-10-22%2023-33-02.png)
+
+### Edit in YAML
+
+```yaml
+square: false
+columns: 1
+type: grid
+cards:
+  - type: custom:simple-clock-card
+    use_military: true
+    hide_seconds: true
+  - type: entities
+    entities:
+      - entity: light.ikea_e27_b7a411fe_level_light_color_on_off
+      - entity: button.ikea_e27_b7a411fe_identify
+    title: Kohorns Lampe
+    state_color: true
+  - type: entities
+    entities:
+      - entity: button.ewelink_wb01_19019723_identify
+        name: Identifybutton
+      - entity: sensor.ewelink_wb01_19019723_power
+    title: Sonoff Wireless Switch SNZB-01
+    state_color: true
+```
+
 ## Automation
 
 ![](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Automation_2022-10-22_23-17-51.png)
@@ -96,15 +131,15 @@ Her to oplysninger vi kan bruge til at lave en Automation:
 ### Actions  
 
 #### Option 1:
-![Action_Option1_2022-10-20_22-48-23.png](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Action_Option1_2022-10-20_22-48-23.png)   
+![Automation_Option1_2022-10-22_23-37-16.png](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Automation_Option1_2022-10-22_23-37-16.png)   
 
 #### Option 2:
 
-![Action_Option2_2022-10-20_22-48-40.png](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Action_Option2_2022-10-20_22-48-40.png)  
+![Automation_Option2_2022-10-22_23-38-00.png](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Automation_Option2_2022-10-22_23-38-00.png)  
 
 #### Option 3:
 
-![Action_Option3_2022-10-20_22-49-19.png](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Action_Option3_2022-10-20_22-49-19.png)  
+![Automation_Option3_2022-10-22_23-38-25.png](./Images/Sonoff_Zigbee_Wireless_Switch_SNZB-01/Automation_Option3_2022-10-22_23-38-25.png)  
 
 ### Edit in YAML
 
