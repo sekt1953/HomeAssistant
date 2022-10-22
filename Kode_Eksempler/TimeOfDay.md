@@ -4,7 +4,7 @@
 
 ### Edit in visual editor
 
-![](./Images/Lovelace_TOD_2022-10-21_13-50-28.png)
+![](./Images/Times_of_the_Day/Lovelace_2022-10-21_13-50-28.png)
 
 ### Edit in YAML
 
