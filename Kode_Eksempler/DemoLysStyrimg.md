@@ -85,7 +85,6 @@ Home Assistant's Timer Dokumentation er [HER!!!](https://www.home-assistant.io/i
 #### Triggers
 
 ![Demo_Lysstyring_Trig_2022-10-22_19-34-00.png](./Images/Demo_Lysstyring_Trig_2022-10-22_19-34-00.png)  
-
 ![Demo_Lysstyring_Trig_2022-10-22_19-34-16.png](./Images/Demo_Lysstyring_Trig_2022-10-22_19-34-16.png)
 ![Demo_Lysstyring_Trig_2022-10-22_19-34-32.png](./Images/Demo_Lysstyring_Trig_2022-10-22_19-34-32.png)
 ![Demo_Lysstyring_Trig_2022-10-22_19-34-48.png](./Images/Demo_Lysstyring_Trig_2022-10-22_19-34-48.png)
