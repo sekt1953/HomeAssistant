@@ -73,7 +73,7 @@ cards:
 
 ![Demo_Lysstyring_Helper_2022-10-22_20-49-21.png](./Images/Demo_Lysstyring_Helper_2022-10-22_20-49-21.png)
 
-Mere om Helper timer [HER](https://www.home-assistant.io/integrations/timer/)
+Home Assistant's Timer Dokumentation er [HER!!!](https://www.home-assistant.io/integrations/timer/)
 
 ## Automation
 
