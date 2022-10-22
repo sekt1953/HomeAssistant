@@ -79,9 +79,15 @@ cards:
 
 ##### Option 3:
 
-![](./Images)
-![](./Images)
-![](./Images)
+![Demo_Lysstyring_Action3_2022-10-22_20-14-01.png](./Images/Demo_Lysstyring_Action3_2022-10-22_20-14-01.png)
+
+##### Option 4:
+
+![](./Images/Demo_Lysstyring_Action4_2022-10-22_20-15-52.png)
+![](./Images/Demo_Lysstyring_Action4_2022-10-22_20-16-08.png)
+
+##### Option 5:
+
 ![](./Images)
 ![](./Images)
 ![](./Images)
