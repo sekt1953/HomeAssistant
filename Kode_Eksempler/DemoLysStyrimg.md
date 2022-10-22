@@ -22,7 +22,7 @@ Denne lysstyring har en Sonoff Wireless Switch SNZB-01 uden for døren, en Sonof
 
 ## Lovelace Demo Lysstyring
 
-![Lovelace_2022-10-22_22-33-45.png](./Images/Demo_Lysstyring/Lovelace_2022-10-22_22-33-45.png)
+![Lovelace_2022-10-22_22-33-45.png](./Images/Demo_Lysstyring/Lovelace0_2022-10-22_22-33-45.png)
 
 ### Lovelace Demo Lysstyring Edit in visual editor
 
