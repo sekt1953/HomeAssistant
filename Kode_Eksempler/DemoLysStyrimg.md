@@ -22,15 +22,15 @@ Denne lysstyring har en Sonoff Wireless Switch SNZB-01 uden for døren, en Sonof
 
 ## Lovelace Demo Lysstyring
 
-![Lovelace_2022-10-22_22-33-45.png](./Images/Demo_Lysstyring/Lovelace0_2022-10-22_22-33-45.png)
+![Lovelace0_2022-10-24_15-44-47.png](./Images/Demo_Lysstyring/Lovelace0_2022-10-24_15-44-47.png)
 
 ### Lovelace Demo Lysstyring Edit in visual editor
 
-![Lovelace1_2022-10-22_22-34-10.png](./Images/Demo_Lysstyring/Lovelace1_2022-10-22_22-34-10.png)
-![Lovelace2_2022-10-22_22-34-19.png](./Images/Demo_Lysstyring/Lovelace2_2022-10-22_22-34-19.png)
-![Lovelace3_2022-10-22_22-34-26.png](./Images/Demo_Lysstyring/Lovelace3_2022-10-22_22-34-26.png)
-![Lovelace4_2022-10-22_22-34-35.png](./Images/Demo_Lysstyring/Lovelace4_2022-10-22_22-34-35.png)
-![Lovelace5_2022-10-22_22-34-46.png](./Images/Demo_Lysstyring/Lovelace5_2022-10-22_22-34-46.png)
+![Lovelace1_2022-10-24_15-45-24.png](./Images/Demo_Lysstyring/Lovelace1_2022-10-24_15-45-24.png)  
+![Lovelace2_2022-10-24_15-45-29.png](./Images/Demo_Lysstyring/Lovelace2_2022-10-24_15-45-29.png)  
+![Lovelace3_2022-10-24_15-45-37.png](./Images/Demo_Lysstyring/Lovelace3_2022-10-24_15-45-37.png)  
+![Lovelace4_2022-10-24_15-45-44.png](./Images/Demo_Lysstyring/Lovelace4_2022-10-24_15-45-44.png)  
+![Lovelace5_2022-10-24_15-45-51.png](./Images/Demo_Lysstyring/Lovelace5_2022-10-24_15-45-51.png)  
 
 ### Lovelace Demo Lysstyring Edit in YAML
 
@@ -64,10 +64,11 @@ cards:
   - type: entities
     entities:
       - entity: sensor.ewelink_wb01_19019723_power
-      - entity: sensor.ewelink_wb01_19019723_power
+        name: SNZB-01
+      - entity: sensor.demo_ms01_battery_2
+        name: SNZB-03
     title: Battery status
     state_color: true
-
 ```
 
 ## Helper Demo Lys Timeout
