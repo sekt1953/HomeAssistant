@@ -7,9 +7,9 @@
 * Telegram for extern kommunitaion
 * Zigbee til nogle forskellige føler og led lamper
   * SilverCrest Zigbee Gateway, Model: **TYGWZ-01** solgt i LIDL
-    * [Hacking the Silvercrest (Lidl) Smart Home Gateway](https://paulbanks.org/projects/lidl-zigbee/#overview)
-    * [Se hvordan du opdater](https://zigbee.blakadder.com/Lidl_TYGWZ-01.html)
-    * [Ny Software for opdatering](https://github.com/banksy-git/lidl-gateway-freedom)
+    * [Hacking the Silvercrest (Lidl) Smart Home Gateway](https://paulbanks.org/projects/lidl-zigbee/#overview "Paul Banks")
+    * [Se hvordan du opdater](https://zigbee.blakadder.com/Lidl_TYGWZ-01.html "blakadder")
+    * [Ny Software for opdatering](https://github.com/banksy-git/lidl-gateway-freedom "banksy-git")
   * [Sonoff Motion Sensor, Model: SNZB-03](https://www.proshop.dk/Smart-Home/Sonoff-SNZB-03-Motion-sensor/3084016?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricesite)
   * [Sonoff Zigbee Wireless Switch, Model: SNZB-01](https://www.proshop.dk/Smart-Home/Sonoff-Zigbee-Wireless-Switch/3084021?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricesite)
   * LIVARNO Smart Home
