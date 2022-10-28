@@ -89,9 +89,9 @@ I min nye installation har jeg valgt at bruge denne gateway fra LIDL
 * [Badeværelse](./Badev%C3%A6relse/README.md)
 * [Køkken](./K%C3%B8kken/README.md)
   * [PWM-LightControler](./K%C3%B8kken/PWM-LightControler/)
-    * [EspHome](./K%C3%B8kken/PWM-LightControler/EspHome/)
-    * [FreeCAD](./K%C3%B8kken/PWM-LightControler/FreeCAD/)
-    * [Fritzing](./K%C3%B8kken/PWM-LightControler/Fritzing/)
+    * [EspHome yaml ](./ESPHome/PWM-LightControler/)
+    * [FreeCAD](./FreeCAD/PWM-LightControler/½)
+    * [Fritzing](./Fritzing/PWM-LightControler/)
 
 ## 10. ESPHome projecter
 
