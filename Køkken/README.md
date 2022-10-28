@@ -11,11 +11,11 @@
 * Kode ESPHome:
   * [ESPHome filer kan hentest her:](../ESPHome/PWM-LightControler/)
 * Diagram og print her:
-  * [Diagram](../Fritzing/PWM-LightControler/)
+  * [Fritzing Diagram & PCB](../Fritzing/PWM-LightControler/)
 
 ## Pir Sensor Box
 
 ![Sonoff SNZB-03](../FreeCAD/Pir-Sensor-Box/Sk%C3%A6rmbillede%20fra%202022-10-28%2009-38-47.png)
 
 * Indbygnings box for Sonoff SNZB-03:
-  * [FreeCad Tegninger kan hentes her:](../FreeCAD/Pir-Sensor-Box/)
+  * [FreeCad Tegninger kan hentes her:](../FreeCAD/Pir-Sensor-Box/)  
