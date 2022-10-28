@@ -15,7 +15,7 @@
 
 ## Pir Sensor Box
 
-![Sonoff SNZB-03](../FreeCAD/Pir-Sensor-Box/Sk%C3%A6rmbillede%20fra%202022-10-28%2009-38-47.png)
+![Sonoff SNZB-03](../FreeCAD/Pir-Sensor-Box/Images/Sk%C3%A6rmbillede%20fra%202022-10-28%2009-38-47.png)
 
 * Indbygnings box for Sonoff SNZB-03:
   * [FreeCad Tegninger kan hentes her:](../FreeCAD/Pir-Sensor-Box/)  
