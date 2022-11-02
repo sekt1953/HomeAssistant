@@ -111,13 +111,15 @@ Home Assistant's Timer Dokumentation er [HER!!!](https://www.home-assistant.io/i
 
 ##### Option 4:
 
-![](./Images/Demo_Lysstyring/Automation_Option4_2022-10-22_20-15-52.png)  
-![](./Images/Demo_Lysstyring/Automation_Option4_2022-10-22_20-16-08.png)  
+![Automation_Option4_2022-11-02_10-42-13.png](./Images/Demo_Lysstyring/Automation_Option4_2022-11-02_10-42-13.png)  
+![Automation_Option4_2022-11-02_10-43-21.png](./Images/Demo_Lysstyring/Automation_Option4_2022-11-02_10-43-21.png)  
+![Automation_Option4_2022-11-02_10-47-16.png](./Images/Demo_Lysstyring/Automation_Option4_2022-11-02_10-47-16.png)  
 
 ##### Option 5:
 
-![Automation_Option5_2022-10-22_20-18-35.png](./Images/Demo_Lysstyring/Automation_Option5_2022-10-22_20-18-35.png)  
-![Automation_Option5_2022-10-22_20-18-59.png](./Images/Demo_Lysstyring/Automation_Option5_2022-10-22_20-18-59.png)  
+![Automation_Option5_2022-11-02_10-49-39.png](./Images/Demo_Lysstyring/Automation_Option5_2022-11-02_10-49-39.png)  
+![Automation_Option5_2022-11-02_10-50-00.png](./Images/Demo_Lysstyring/Automation_Option5_2022-11-02_10-50-00.png)  
+
 
 ##### Option 6:
 
