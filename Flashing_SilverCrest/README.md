@@ -1,4 +1,4 @@
-# SilverCrest Zigbee Gateway using Ubuntu 20.04LTS
+# SilverCrest Zigbee Gateway using Ubuntu 22.04LTS
 
 ## Kilde
 
