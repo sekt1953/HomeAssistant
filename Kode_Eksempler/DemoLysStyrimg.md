@@ -133,13 +133,13 @@ trigger:
   - type: motion
     platform: device
     device_id: 99209f9ae32fe0e766da839042ba7085
-    entity_id: binary_sensor.demo_ms01_iaszone_2
+    entity_id: binary_sensor.ewelink_ms01_iaszone
     domain: binary_sensor
     id: Motion Start
   - type: no_motion
     platform: device
     device_id: 99209f9ae32fe0e766da839042ba7085
-    entity_id: binary_sensor.demo_ms01_iaszone_2
+    entity_id: binary_sensor.ewelink_ms01_iaszone
     domain: binary_sensor
     id: Motion Stop
   - platform: event
@@ -211,11 +211,16 @@ action:
             device_id: e1ad356de61e26d86b0ecb3f9e07cca3
             entity_id: light.ikea_e27_b7a411fe_level_light_color_on_off
             domain: light
-          - service: timer.start
-            data:
-              duration: "59"
-            target:
-              entity_id: timer.demo_lys_timeout
+          - if:
+              - condition: state
+                entity_id: binary_sensor.ewelink_ms01_iaszone
+                state: "off"
+            then:
+              - service: timer.start
+                data:
+                  duration: "15"
+                target:
+                  entity_id: timer.demo_lys_timeout
       - conditions:
           - condition: trigger
             id: SBZN-01 Double Press Action
@@ -225,11 +230,16 @@ action:
             entity_id: light.ikea_e27_b7a411fe_level_light_color_on_off
             domain: light
             brightness_pct: 50
-          - service: timer.start
-            data:
-              duration: "30"
-            target:
-              entity_id: timer.demo_lys_timeout
+          - if:
+              - condition: state
+                entity_id: binary_sensor.ewelink_ms01_iaszone
+                state: "off"
+            then:
+              - service: timer.start
+                data:
+                  duration: "15"
+                target:
+                  entity_id: timer.demo_lys_timeout
       - conditions:
           - condition: trigger
             id: SBZN-01 Hold Action
@@ -243,5 +253,4 @@ action:
             entity_id: light.ikea_e27_b7a411fe_level_light_color_on_off
             domain: light
 mode: single
-
 ```
