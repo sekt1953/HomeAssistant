@@ -43,29 +43,26 @@
 ### 2a. Installer Official Add-ons
 
 * Studio Code Server
-  * Start on boot: on
-  * Watchdog: on
-  * Auto update: on
-  * Show in sidebar: on
 * MariaDB
-  * Start on boot: on
-  * Watchdog: on
-  * Auto update: on
+  * Logins
+    * set password:
+    * set username
+  * Rights
+    * database:
+    * username:
 * ESPHome
-  * Start on boot: on
-  * Watchdog: on
-  * Auto update: on
-  * Show in sidebar: on
 * File editor
-  * Start on boot: off
-  * Watchdog: on
-  * Auto update: on
-  * Show in sidebar: off
+  * Options
+    * Directories First: on
+    * Enforce Basepath: off
+    * Git: off
 * Samba share
-  * Start on boot: on
-  * Watchdog: on
-  * Auto update: on
-* SSH
+  * Options
+    * Username:
+    * Password:
+    * Workgroup: WORKGROUP
+    * Enable Compatibility Mode: off
+* SSH & Web Terminal
   * Youtube videos [Enable SSH In Home Assistant - TUTORIAL 2022](https://www.youtube.com/watch?v=_ANmn9QSLtA "Smart Home Junkie")
 
 ### 2c. Installerer Home Assistant Community Store (HACS)
