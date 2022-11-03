@@ -65,11 +65,15 @@
   * Start on boot: on
   * Watchdog: on
   * Auto update: on
+* SSH
+  * Youtube videos [Enable SSH In Home Assistant - TUTORIAL 2022](https://www.youtube.com/watch?v=_ANmn9QSLtA "Smart Home Junkie")
 
 ### 2c. Installerer Home Assistant Community Store (HACS)
 
 * Integrationer
   * HACS
+    * youtube video [How to install HACS in 2022 in Home Assistant - NEW UPDATED VERSION!](https://www.youtube.com/watch?v=D6ZlhE-Iv9E "
+Smart Home Junkie")
   * Waste Collection Schedule
 * Frontend
   * Light Entity Row
