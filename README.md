@@ -42,17 +42,29 @@
 
 ### 2a. Installer Official Add-ons
 
-* File editor
-* Samba share
+* Studio Code Server
+  * Start on boot: on
+  * Watchdog: on
+  * Auto update: on
+  * Show in sidebar: on
 * MariaDB
-  * System Monitering
-
-### 2b. Installer Home Assistant Community Add-ons
-
+  * Start on boot: on
+  * Watchdog: on
+  * Auto update: on
 * ESPHome
-* motionEye
-* Visual Studio Code
-* SSH & Web Terminal
+  * Start on boot: on
+  * Watchdog: on
+  * Auto update: on
+  * Show in sidebar: on
+* File editor
+  * Start on boot: off
+  * Watchdog: on
+  * Auto update: on
+  * Show in sidebar: off
+* Samba share
+  * Start on boot: on
+  * Watchdog: on
+  * Auto update: on
 
 ### 2c. Installerer Home Assistant Community Store (HACS)
 
