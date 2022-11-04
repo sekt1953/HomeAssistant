@@ -6,19 +6,20 @@
 * [Argon ONE M.2 Case](https://raspberrypi.dk/produkt/argon-one-m-2-case-til-raspberry-pi-4/)
 * Telegram for extern kommunitaion
 * Zigbee til nogle forskellige føler og led lamper
-  * SilverCrest Zigbee Gateway, Model: **TYGWZ-01** solgt i LIDL
-    * [Hacking the Silvercrest (Lidl) Smart Home Gateway](https://paulbanks.org/projects/lidl-zigbee/#overview "Paul Banks")
-    * [Se hvordan du opdater](https://zigbee.blakadder.com/Lidl_TYGWZ-01.html "blakadder")
-    * [Ny Software for opdatering](https://github.com/banksy-git/lidl-gateway-freedom "banksy-git")
-  * [Sonoff Motion Sensor, Model: SNZB-03 (timeout 2min)](https://www.proshop.dk/Smart-Home/Sonoff-SNZB-03-Motion-sensor/3084016?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricesite)
-  * [Sonoff Zigbee Wireless Switch, Model: SNZB-01](https://www.proshop.dk/Smart-Home/Sonoff-Zigbee-Wireless-Switch/3084021?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricesite)
-  * LIVARNO Smart Home
+  * SilverCrest
+    * SilverCrest Zigbee Gateway, Model: **TYGWZ-01** solgt i LIDL
+      * [Hacking the Silvercrest (Lidl) Smart Home Gateway](https://paulbanks.org/projects/lidl-zigbee/#overview "Paul Banks")
+      * [Se hvordan du opdater](https://zigbee.blakadder.com/Lidl_TYGWZ-01.html "blakadder")
+      * [Ny Software for opdatering](https://github.com/banksy-git/lidl-gateway-freedom "banksy-git")
+    * [SilverCrest Outdoor Plug](https://zigbee.blakadder.com/Lidl_HG06619.html)
+  * Sonoff
+    * [Sonoff Motion Sensor, Model: SNZB-03 (timeout 2min)](https://www.proshop.dk/Smart-Home/Sonoff-SNZB-03-Motion-sensor/3084016?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricesite)
+    * [Sonoff Zigbee Wireless Switch, Model: SNZB-01](https://www.proshop.dk/Smart-Home/Sonoff-Zigbee-Wireless-Switch/3084021?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricesite)
+  * LIVARNO Smart Home (LIDL)
     * [Led Ceiling Light, Model-nr.: 14153706L / 14153806L](https://zigbee.blakadder.com/Lidl_14153706L.html)
     * [Smart Colour-Change LED Light Bulb IAN 360062_2010](https://zigbee.blakadder.com/Lidl_HG07834C.html)
     * [Livarno Lux E27 9W CCT Bulb](https://zigbee.blakadder.com/Lidl_HG06492C.html)
     * [LIDL Fjernbetjening TS1001 _TYZB01_bngwdjsr](https://zigbee.blakadder.com/Lidl_HG06323.html)
-  * SilverCrest
-    * [SilverCrest Outdoor Plug](https://zigbee.blakadder.com/Lidl_HG06619.html)
   * Ikea TRÅDFRI
     * E1810 TRÅDFRI fjernbetjening, 304.432.24
     * [E1745 TRÅDFRI bevægelsessensor, 704.299.13 (timeout 3min)](https://zigbee.blakadder.com/Ikea_E1745.html "zigbee.blakadder.com")
