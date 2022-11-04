@@ -10,7 +10,7 @@
     * [Hacking the Silvercrest (Lidl) Smart Home Gateway](https://paulbanks.org/projects/lidl-zigbee/#overview "Paul Banks")
     * [Se hvordan du opdater](https://zigbee.blakadder.com/Lidl_TYGWZ-01.html "blakadder")
     * [Ny Software for opdatering](https://github.com/banksy-git/lidl-gateway-freedom "banksy-git")
-  * [Sonoff Motion Sensor, Model: SNZB-03](https://www.proshop.dk/Smart-Home/Sonoff-SNZB-03-Motion-sensor/3084016?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricesite)
+  * [Sonoff Motion Sensor, Model: SNZB-03 (timeout 2min)](https://www.proshop.dk/Smart-Home/Sonoff-SNZB-03-Motion-sensor/3084016?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricesite)
   * [Sonoff Zigbee Wireless Switch, Model: SNZB-01](https://www.proshop.dk/Smart-Home/Sonoff-Zigbee-Wireless-Switch/3084021?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricesite)
   * LIVARNO Smart Home
     * [Led Ceiling Light, Model-nr.: 14153706L / 14153806L](https://zigbee.blakadder.com/Lidl_14153706L.html)
@@ -21,7 +21,7 @@
     * [SilverCrest Outdoor Plug](https://zigbee.blakadder.com/Lidl_HG06619.html)
   * Ikea TRÅDFRI
     * E1810 TRÅDFRI fjernbetjening, 304.432.24
-    * E1745 TRÅDFRI bevægelsessensor, 704.299.13 (fejlkøb)
+    * [E1745 TRÅDFRI bevægelsessensor, 704.299.13 (timeout 3min)](https://zigbee.blakadder.com/Ikea_E1745.html "zigbee.blakadder.com")
     * E27 TRÅDFRI LED 806lm, 704.391.58
   * Shelly
     * [Shelly Plus 1PM](https://www.proshop.dk/Smart-Home/Shelly-Plus-1PM/3027897?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricesite)
@@ -44,26 +44,30 @@
 
 * Studio Code Server
 * MariaDB
-  * Logins
-    * set password:
-    * set username
-  * Rights
-    * database:
-    * username:
+  * Youtube videos [No More History Loss In Home Assistant!](https://www.youtube.com/watch?v=0Nf70avId0w "Smart Home Junkie")
+  * Counfiguration
+    * Logins
+      * set password:
+      * set username
+    * Rights
+      * database:
+      * username:
 * ESPHome
 * File editor
-  * Options
+  * Counfiguration
     * Directories First: on
     * Enforce Basepath: off
     * Git: off
 * Samba share
-  * Options
+  * Youtube videos [How to enable Samba in Home Assistant and access your files in your network](https://www.youtube.com/watch?v=udqY2CYzYGk "Smart Home Junkie")
+  * Counfiguration
     * Username:
     * Password:
     * Workgroup: WORKGROUP
     * Enable Compatibility Mode: off
 * SSH & Web Terminal
   * Youtube videos [Enable SSH In Home Assistant - TUTORIAL 2022](https://www.youtube.com/watch?v=_ANmn9QSLtA "Smart Home Junkie")
+  * Counfiguration
 
 ### 2c. Installerer Home Assistant Community Store (HACS)
 
