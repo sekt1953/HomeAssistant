@@ -2,7 +2,7 @@
 
 ## Lovelace
 
-![](./Images/Sk%C3%A6rmbillede%20fra%202022-11-28%2022-16-17.png)
+![](./Images/Sk%C3%A6rmbillede%20fra%202022-11-28%2022-35-37.png)
 
 Her er Lovelace koden i yaml:
 
