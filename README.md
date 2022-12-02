@@ -16,7 +16,18 @@
     * [Sonoff Motion Sensor, Model: SNZB-03 (timeout 2min)](https://www.proshop.dk/Smart-Home/Sonoff-SNZB-03-Motion-sensor/3084016?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricesite)
     * [Sonoff Zigbee Wireless Switch, Model: SNZB-01](https://www.proshop.dk/Smart-Home/Sonoff-Zigbee-Wireless-Switch/3084021?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricesite)
   * LIVARNO Smart Home (LIDL)
-    * [Led Ceiling Light, Model-nr.: 14153706L / 14153806L](https://zigbee.blakadder.com/Lidl_14153706L.html)
+    * [Led Ceiling Light, Model-nr.: 14153706L / 14153806L](https://zigbee.blakadder.com/Lidl_14153706L.html)  
+      * Nulstil lampen  
+      For at forbinde lampen, skal den være i læringstilstanden. Dette vises ved et regelmæssigt blink af lampen.  
+      Hvis lampen ikke blinker af sig selv, skal læringstilstanden nulstilles.   
+      For at aktiverer læringstilstanden, skal du tænde og slukke lampen i følgende rytme:
+        * tænd
+        * 2 sek. slukket
+        * 2 sec. tændt
+        * 2 sek. slukket
+        * 2 sec. tændt
+        * 2 sek. slukket
+        * 2 sec. tændt
     * [Smart Colour-Change LED Light Bulb IAN 360062_2010](https://zigbee.blakadder.com/Lidl_HG07834C.html)
     * [Livarno Lux E27 9W CCT Bulb](https://zigbee.blakadder.com/Lidl_HG06492C.html)
     * [LIDL Fjernbetjening TS1001 _TYZB01_bngwdjsr](https://zigbee.blakadder.com/Lidl_HG06323.html)
