@@ -14,7 +14,7 @@ cards:
 ```yaml
 
 ```
-## Timer button ()Blødkogte æg)
+## Timer button (Blødkogte æg)
 
 ```yaml
 type: custom:button-card
