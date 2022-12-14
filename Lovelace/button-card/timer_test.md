@@ -1,5 +1,12 @@
 # button-card 
 
+* Kilde: 
+  * https://github.com/custom-cards/button-card
+  * [Community guides:](https://github.com/custom-cards/button-card#community-guides)
+    * https://robotnet.dk/2020/homekit-knapper-custom-buttons-home-assistant.html
+  * [Credits](https://github.com/custom-cards/button-card#credits)
+  *
+
 ## Lovelace Demo
 
 ![Demo_000](./images/Demo_2022-12-13_21-59-12.png)
@@ -11,9 +18,6 @@ cards:
     cards:
 ```
 
-```yaml
-
-```
 ## Timer button (Blødkogte æg)
 
 ```yaml
