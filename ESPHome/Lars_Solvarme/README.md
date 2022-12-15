@@ -188,5 +188,4 @@ cards:
     entities:
       - entity: sensor.solvarme_bund_temperature
     title: Bund Temperature
-
-```
+``` 

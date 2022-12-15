@@ -1,0 +1,21 @@
+square: false
+columns: 1
+type: grid
+cards:
+  - type: entities
+    entities:
+      - entity: sensor.solvarme_top_temperature
+        name: Top Temperature
+      - entity: sensor.solvarme_bund_temperature
+        name: Bund Temperature
+      - entity: binary_sensor.solvarme_touch_pad_15
+        name: Touch Pad GPIO15
+    title: Solvarme Tank
+  - type: history-graph
+    entities:
+      - entity: sensor.solvarme_top_temperature
+    title: Top Temperature
+  - type: history-graph
+    entities:
+      - entity: sensor.solvarme_bund_temperature
+    title: Bund Temperature
