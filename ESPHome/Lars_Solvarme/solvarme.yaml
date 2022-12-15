@@ -97,7 +97,7 @@ binary_sensor:
 
 sensor:
   - platform: dallas
-    address: 0x64000006B629FD28
+    address: 0x583c01f0965d3228
     #index: 0
     resolution: 12
     accuracy_decimals: 2
