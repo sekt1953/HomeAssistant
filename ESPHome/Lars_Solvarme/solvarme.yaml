@@ -1,5 +1,5 @@
 substitutions:
-  esphome_name: "solvarme"
+  esphome_name: "kedel"
   esphome_status_led: GPIO2
   esphome_dalas_pin: GPIO19 
   glyphs_ssd1306: "!%()+=,-_.:€°/0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ abcdefghijklmnopqrstuvwxyzæøå"
@@ -13,6 +13,9 @@ wifi:
   networks:
   - ssid: !secret wifi_ssid
     password: !secret wifi_password
+  - ssid: "Svinget16"
+    password: "Mask!nmester"
+    
 
   ap:
     # Enable fallback hotspot (captive portal) in case wifi connection fails

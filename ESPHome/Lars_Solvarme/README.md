@@ -18,7 +18,7 @@ solvarme.yaml:
 
 ```yaml
 substitutions:
-  esphome_name: "solvarme"
+  esphome_name: "kedel"
   esphome_status_led: GPIO2
   esphome_dalas_pin: GPIO19 
   glyphs_ssd1306: "!%()+=,-_.:€°/0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ abcdefghijklmnopqrstuvwxyzæøå"
@@ -32,6 +32,9 @@ wifi:
   networks:
   - ssid: !secret wifi_ssid
     password: !secret wifi_password
+  - ssid: "Svinget16"
+    password: "Mask!nmester"
+    
 
   ap:
     # Enable fallback hotspot (captive portal) in case wifi connection fails
@@ -80,10 +83,7 @@ display:
     rotation: 270
     address: 0x3C
     lambda: |-
-      // Print "Mitt Smarta Hus" in top center.
-      //it.printf(64, 0, id(font4), TextAlign::TOP_CENTER, "Mit Smarte Hjem");
-      
-      // Print temperature (from homeassistant sensor)
+      // Print temperature 
       if (id(${esphome_name}_Top_Temperature).has_state()) {
         it.printf(32, 24, id(font3), TextAlign::BASELINE_CENTER , "%.1f°", id(${esphome_name}_Top_Temperature).state);
       }
@@ -91,11 +91,10 @@ display:
       // Print time in HH:MM format
       it.strftime(32, 70, id(font3), TextAlign::BASELINE_CENTER, "%H:%M", id(esptime).now());
 
-      // Print inside temperature (from homeassistant sensor)
+      // Print inside temperature 
       if (id(${esphome_name}_Bund_Temperature).has_state()) {
         it.printf(32, 120, id(font3), TextAlign::BASELINE_CENTER , "%.1f°", id(${esphome_name}_Bund_Temperature).state);
       }
-
       
 # I2C for BME280 addr.: 0x76/0x77
 i2c:
@@ -104,14 +103,12 @@ i2c:
   scan: True
   id: bus_a
 
-
 dallas:
   - pin: ${esphome_dalas_pin}
     update_interval: 60s
 
 esp32_touch:
   setup_mode: False 
-  
 
 binary_sensor:
   - platform: esp32_touch
