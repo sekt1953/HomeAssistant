@@ -4,13 +4,13 @@ type: grid
 cards:
   - type: entities
     entities:
-      - entity: sensor.solvarme_top_temperature
+      - entity: sensor.kedel_top_temperature
         name: Top Temperature
-      - entity: sensor.solvarme_bund_temperature
+      - entity: sensor.kedel_bund_temperature
         name: Bund Temperature
-      - entity: binary_sensor.solvarme_touch_pad_15
+      - entity: binary_kedel.solvarme_touch_pad_15
         name: Touch Pad GPIO15
-    title: Solvarme Tank
+    title: Kedel Tank
   - type: history-graph
     entities:
       - entity: sensor.solvarme_top_temperature
