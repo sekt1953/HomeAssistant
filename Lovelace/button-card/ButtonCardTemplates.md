@@ -36,16 +36,16 @@ button_card_templates:
       - value: active
         styles:
           card:
-            - color: blue
-            - '--mdc-ripple-color': yellow
+            - color: yellow
+            - '--mdc-ripple-color': blue
             - '--mdc-ripple-press-opacity': 0.5
             - font-size: 16px
           icon:
-            - color: blue
+            - color: yellow
           label:
             - font-size: 11px
-            - color: blue
+            - color: yellow
           state:
-            - color: blue
+            - color: yellow
 
 [...]

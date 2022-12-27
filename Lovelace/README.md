@@ -2,6 +2,13 @@
 
 ## Kitchen Timer with Button-Card
 
+* Kilde: 
+  * https://github.com/custom-cards/button-card
+  * [Community guides:](https://github.com/custom-cards/button-card#community-guides)
+    * https://robotnet.dk/2020/homekit-knapper-custom-buttons-home-assistant.html
+  * [Credits](https://github.com/custom-cards/button-card#credits)
+  *
+
 ![Kitchen Timer](./button-card/images/Sk%C3%A6rmbillede%20fra%202022-12-27%2017-16-05.png)
 
 * Button-Card

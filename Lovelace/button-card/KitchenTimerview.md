@@ -218,7 +218,7 @@ template:
   - variable_test
   - header
 variables:
-  var_name:   Grahamsbrød Hævetid 
+  var_name:   Grahamsbrød<br>Hævetid 
 entity: timer.kitchen_008_grahamsbrod_haevetid
 tap_action:
   action: call-service
@@ -240,7 +240,7 @@ template:
   - variable_test
   - header
 variables:
-  var_name:   Grahamsbrød Bagetid<br>ved 200°C 
+  var_name:   Grahamsbrød<br>Bagetid ved 200°C 
 entity: timer.kitchen_009_grahamsbrod_bagetid
 tap_action:
   action: call-service
