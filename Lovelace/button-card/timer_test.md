@@ -135,3 +135,7 @@ sequence:
 mode: single
 icon: mdi:timer
 ```
+
+### Helpers
+
+![Helpers_000](./images/Sk%C3%A6rmbillede%20fra%202022-12-27%2005-40-39.png)
