@@ -210,8 +210,54 @@ hold_action:
 
 ## Line 4.
 
-### Line 4.1 
+### Line 4.1  Grahamsbrød Hævetid 
 
-### Line 4.2 
+```yaml
+type: custom:button-card
+template:
+  - variable_test
+  - header
+variables:
+  var_name:   Grahamsbrød Hævetid 
+entity: timer.kitchen_008_grahamsbrod_haevetid
+tap_action:
+  action: call-service
+  service: script.timerstart
+  service_data:
+    entity_id: timer.kitchen_008_grahamsbrod_haevetid
+hold_action:
+  action: call-service
+  service: timer.cancel
+  service_data:
+    entity_id: timer.kitchen_008_grahamsbrod_haevetid
+```
+
+### Line 4.2   Grahamsbrød Bagetid ved 200°C 
+
+```yaml
+type: custom:button-card
+template:
+  - variable_test
+  - header
+variables:
+  var_name:   Grahamsbrød Bagetid<br>ved 200°C 
+entity: timer.kitchen_009_grahamsbrod_bagetid
+tap_action:
+  action: call-service
+  service: script.timerstart
+  service_data:
+    entity_id: timer.kitchen_009_grahamsbrod_bagetid
+hold_action:
+  action: call-service
+  service: timer.cancel
+  service_data:
+    entity_id: timer.kitchen_009_grahamsbrod_bagetid
+```
 
 ### Line 4.3 
+
+```yaml
+type: custom:button-card
+template: variable_test
+aspect_ratio: 1.2
+```
