@@ -5,8 +5,6 @@
 ```yaml
 type: vertical-stack
 cards:
-  - type: horizontal-stack
-    cards:
 [.. Line 1 ..]
   - type: horizontal-stack
     cards: 
@@ -16,19 +14,39 @@ cards:
 [.. Line 3 ..]
   - type: horizontal-stack
     cards: 
+[.. Line 4 ..]
+  - type: horizontal-stack
+    cards: 
+[.. Line 5 ..]
+[.. Line 6 ..]
+  - type: horizontal-stack
+    cards: 
+[.. Line 7 ..]
+  - type: horizontal-stack
+    cards: 
+[.. Line 8 ..]
+  - type: horizontal-stack
+    cards: 
 ```
 
-## Line 1.
+## Line 1
 
-### Line 1.1 Blødkogte æg
+```yaml
+type: custom:simple-clock-card
+use_military: true
+hide_seconds: false
+```
+
+## Line 2
+
+### Line 2.1 Blødkogte æg
 
 ```yaml
 type: custom:button-card
 template:
-  - variable_test
-  - header
-variables:
-  var_name: Blødkogte Æg
+  - header_0
+  - header_timer
+name: Blødkogte Æg
 entity: timer.kitchen_001_aeg_blodkogte
 tap_action:
   action: call-service
@@ -42,15 +60,14 @@ hold_action:
     entity_id: timer.kitchen_001_aeg_blodkogte
 ```
 
-### Line 1.2 Hårdkogte Æg
+### Line 2.2 Hårdkogte Æg
 
 ```yaml
 type: custom:button-card
 template:
-  - variable_test
-  - header
-variables:
-  var_name: Hårdkogte Æg
+  - header_0
+  - header_timer
+name: Hårdkogte Æg
 entity: timer.kitchen_002_aeg_hardkogte
 tap_action:
   action: call-service
@@ -64,15 +81,14 @@ hold_action:
     entity_id: timer.kitchen_002_aeg_hardkogte
 ```
 
-### Line 1.3 Morgen Boller Bagetid ved 220°C
+### Line 2.3 Morgen Boller Bagetid ved 220°C
 
 ```yaml
 type: custom:button-card
 template:
-  - variable_test
-  - header
-variables:
-  var_name: Morgen Boller<br>Bagetid ved 220°C
+  - header_0
+  - header_timer
+name: Morgen Boller<br>Bagetid ved 220°C
 entity: timer.kitchen_010_morgen_boller_bagetid
 tap_action:
   action: call-service
@@ -86,17 +102,16 @@ hold_action:
     entity_id: timer.kitchen_010_morgen_boller_bagetid
 ```
 
-## Line 2.
+## Line 3
 
-### Line 2.1 Rugbrød hævetid
+### Line 3.1 Rugbrød hævetid
 
 ```yaml
 type: custom:button-card
 template:
-  - variable_test
-  - header
-variables:
-  var_name: Rugbrød hævetid
+  - header_0
+  - header_timer
+name: Rugbrød hævetid
 entity: timer.kitchen_003_rugbrod_haevetid
 tap_action:
   action: call-service
@@ -110,15 +125,14 @@ hold_action:
     entity_id: timer.kitchen_003_rugbrod_haevetid
 ```
 
-### Line 2.2 Rugbrød bagetid ved 170°C
+### Line 3.2 Rugbrød bagetid ved 170°C
 
 ```yaml
 type: custom:button-card
 template:
-  - variable_test
-  - header
-variables:
-  var_name: Rugbrød bagetid<br>ved 170°C
+  - header_0
+  - header_timer
+name: Rugbrød bagetid<br>ved 170°C
 entity: timer.kitchen_004_rugbrod_bagetid
 tap_action:
   action: call-service
@@ -132,25 +146,23 @@ hold_action:
     entity_id: timer.kitchen_004_rugbrod_bagetid
 ```
 
-### Line 2.3 Empty card
+### Line 3.3 Empty card
 
 ```yaml
 type: custom:button-card
-template: variable_test
 aspect_ratio: 1.2
 ```
 
-## Line 3.
+## Line 4
 
-### Line 3.1  Fødselsdagsboller hævetid 1 
+### Line 4.1  Fødselsdagsboller hævetid 1 
 
 ```yaml
 type: custom:button-card
 template:
-  - variable_test
-  - header
-variables:
-  var_name:  Fødselsdagsboller hævetid 1 
+  - header_0
+  - header_timer
+name:  Fødselsdagsboller hævetid 1 
 entity: timer.kitchen_005_fodselsdagsboller_haevetid_1
 tap_action:
   action: call-service
@@ -164,15 +176,14 @@ hold_action:
     entity_id: timer.kitchen_005_fodselsdagsboller_haevetid_1
 ```
 
-### Line 3.2  Fødselsdagsboller hævetid 2 
+### Line 4.2  Fødselsdagsboller hævetid 2 
 
 ```yaml
 type: custom:button-card
 template:
-  - variable_test
-  - header
-variables:
-  var_name:  Fødselsdagsboller hævetid 2 
+  - header_0
+  - header_timer
+name:  Fødselsdagsboller hævetid 2 
 entity: timer.kitchen_006_fodselsdagsboller_haevetid_2
 tap_action:
   action: call-service
@@ -186,15 +197,14 @@ hold_action:
     entity_id: timer.kitchen_006_fodselsdagsboller_haevetid_2
 ```
 
-### Line 3.3 Fødselsdagsboller bagetid ved 200°C
+### Line 4.3 Fødselsdagsboller bagetid ved 200°C
 
 ```yaml
 type: custom:button-card
 template:
-  - variable_test
-  - header
-variables:
-  var_name:  Fødselsdagsboller bagetid ved 200°C
+  - header_0
+  - header_timer
+name:  Fødselsdagsboller bagetid ved 200°C
 entity: timer.kitchen_007_fodselsdagsboller_bagetid
 tap_action:
   action: call-service
@@ -208,17 +218,16 @@ hold_action:
     entity_id: timer.kitchen_007_fodselsdagsboller_bagetid
 ```
 
-## Line 4.
+## Line 5
 
-### Line 4.1  Grahamsbrød Hævetid 
+### Line 5.1  Grahamsbrød Hævetid 
 
 ```yaml
 type: custom:button-card
 template:
-  - variable_test
-  - header
-variables:
-  var_name:   Grahamsbrød<br>Hævetid 
+  - header_0
+  - header_timer
+name:   Grahamsbrød<br>Hævetid 
 entity: timer.kitchen_008_grahamsbrod_haevetid
 tap_action:
   action: call-service
@@ -232,15 +241,14 @@ hold_action:
     entity_id: timer.kitchen_008_grahamsbrod_haevetid
 ```
 
-### Line 4.2   Grahamsbrød Bagetid ved 200°C 
+### Line 5.2   Grahamsbrød Bagetid ved 200°C 
 
 ```yaml
 type: custom:button-card
 template:
-  - variable_test
-  - header
-variables:
-  var_name:   Grahamsbrød<br>Bagetid ved 200°C 
+  - header_0
+  - header_timer
+name:   Grahamsbrød<br>Bagetid ved 200°C 
 entity: timer.kitchen_009_grahamsbrod_bagetid
 tap_action:
   action: call-service
@@ -254,10 +262,100 @@ hold_action:
     entity_id: timer.kitchen_009_grahamsbrod_bagetid
 ```
 
-### Line 4.3 
+### Line 5.3
 
 ```yaml
 type: custom:button-card
-template: variable_test
 aspect_ratio: 1.2
+```
+
+### Line 6
+
+```yaml
+type: custom:button-card
+color_type: blank-card
+```
+
+### Line 7
+
+### Line 7.1
+
+```yaml
+type: custom:button-card
+template:
+  - header_0
+  - header_light
+entity: light.kitchentablelight
+name: Køkken Bord
+```
+
+### Line 7.2
+
+```yaml
+type: custom:button-card
+template:
+  - header_0
+  - header_light
+name: Køkken Loft
+```
+
+### Line 7.3
+
+```yaml
+type: custom:button-card
+template:
+  - header_0
+  - header_light
+name: Spisekrog
+entity: light.ikea_of_sweden_tradfri_bulb_e27_cws_806lm_light
+```
+
+### Line 7.4
+
+```yaml
+type: custom:button-card
+template:
+  - header_0
+  - header_light
+name: Korridor
+```
+
+### Line 8
+
+### Line 8.1
+
+```yaml
+type: custom:button-card
+template:
+  - header_0
+  - header_pir
+name: Bad
+entity: binary_sensor.bad_ms01_iaszone
+```
+
+### Line 8.2
+
+```yaml
+type: custom:button-card
+template:
+  - header_0
+  - header_light
+```
+
+### Line 8.3
+
+```yaml
+type: custom:button-card
+template:
+  - header_0
+  - header_light
+```
+
+### Line 8.4
+
+```yaml
+type: custom:button-card
+template:
+  - header_0
+  - header_light
 ```

@@ -9,7 +9,7 @@
   * [Credits](https://github.com/custom-cards/button-card#credits)
   *
 
-![Kitchen Timer](./button-card/images/Sk%C3%A6rmbillede%20fra%202022-12-27%2017-16-05.png)
+![Kitchen Timer](./button-card/images/Sk%C3%A6rmbillede%20fra%202022-12-29%2023-31-09.png)
 
 * Button-Card
   * [Button Card Templates](./button-card/ButtonCardTemplates.md)
