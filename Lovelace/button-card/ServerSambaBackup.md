@@ -1,11 +1,24 @@
 # Server 
 
+## Intro
+
+* Clock
+  * As on my other pages, I always have a clock at the top, so you always have easy access to the time. As a clock I use a **HACS Frontend simple-clock-card**
+* Samba-Backup
+  * For my design of the **samba backup view**, I have used [ADVANCED styling options](https://github.com/custom-cards/button-card#advanced-styling-options) and got a lot of help from the page [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/), a slightly messy page, but full of good information.  
+* Raspberry Pi 4
+
+## Clock
+
+```yaml
+type: vertical-stack
+cards:
+  - type: custom:simple-clock-card
+    use_military: true
+    hide_seconds: true
+```
+
 ## Samba-Backup
-
-### Intro
-
-For my design of the **samba backup view**, I have used [ADVANCED styling options](https://github.com/custom-cards/button-card#advanced-styling-options) and got a lot of help from the page [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/), a slightly messy page, but full of good information.  
-As on my other pages, I always have a clock at the top, so you always have easy access to the time. As a clock I use a **HACS Frontend simple-clock-card**
 
 ### Samba-Backup View images
 
@@ -14,11 +27,6 @@ As on my other pages, I always have a clock at the top, so you always have easy 
 ### Samba-Backup View yaml-code
 
 ```yaml
-type: vertical-stack
-cards:
-  - type: custom:simple-clock-card
-    use_military: true
-    hide_seconds: true
   - type: horizontal-stack
     cards:
       - type: vertical-stack
