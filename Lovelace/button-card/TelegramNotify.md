@@ -2,7 +2,7 @@
 
 ## New Server ha-8-sekt
 
-Configuration:
+### Configuration
 
 /config/configuration.yaml
 
@@ -29,60 +29,38 @@ notify:
 [...]
 ```
 
-## Old Server
+## Automations
 
-Automation: 04_egg_and_Backing_timer
+### Automation: KitchenTimerChangeState
 
 ```yaml
-alias: 04_egg_and_Backing_timer
+alias: KitchenTimerChangeState
+description: ""
 trigger:
   - platform: state
     entity_id:
-      - timer.aeg_blodkogte
-      - timer.aeg_hardkogte
-      - timer.fodselsdagsboller_haevetid_1
-      - timer.fodselsdagsboller_haevetid_2
-      - timer.fodselsdagsboller_bagetid
-      - timer.morgen_bollere_bagetid
-      - timer.rugbrod_haevetid
-      - timer.rugbrod_bagetid
-      - timer.svendbrodet_haevetid_1
-      - timer.svendbrodet_haevetid_2
-      - timer.svendbrodet_bagetid
-      - timer.svendboller
-      - timer.grahamsbrod_haevetid
-      - timer.grahamsbrod_bagetid
+      - timer.kitchen_001_aeg_blodkogte
+      - timer.kitchen_002_aeg_hardkogte
+      - timer.kitchen_003_rugbrod_haevetid
+      - timer.kitchen_004_rugbrod_bagetid
+      - timer.kitchen_005_fodselsdagsboller_haevetid_1
+      - timer.kitchen_006_fodselsdagsboller_haevetid_2
+      - timer.kitchen_007_fodselsdagsboller_bagetid
+      - timer.kitchen_008_grahamsbrod_haevetid
+      - timer.kitchen_009_grahamsbrod_bagetid
+      - timer.kitchen_010_morgen_boller_bagetid
     from: active
     to: idle
 condition: []
 action:
   - service: notify.persistent_notification
     data:
-      title: "Køkken Timer Slut !! "
       message: "{{ trigger.to_state.name }}"
+      title: "Køkken Timer Slut !! "
   - service: notify.sekt1953_group_1
     data:
       title: "Køkken Timer Slut !! "
       message: "{{ trigger.to_state.name }}"
-mode: single
-
-```
-
-Configuration:
-
-```yaml
-# Example configuration.yaml entry for the Telegram Bot
-telegram_bot:
-  - platform: polling   # 202012172116 @sekt1953_1_bot
-    api_key: !secret telegram_api_key
-    allowed_chat_ids:
-      - 837103786        # username: sekt1953
-      - -1001361577327   # title: sekt1953_group_1, type: supergroup
-      - -1001717170907   # title: Hassio-2021, type: supergroup
-```
-
-Comment:
-
-```yaml
-- 837103786        # first_name: Svenn-Erik K.,last_name: Thomsen, username: sekt1953 (https://t.me/sekt1953), language_code: da (-),  created: newer than 7/2019 (?) (https://t.me/getidsbot?start=idhelp)
+mode: queued
+max: 10
 ```
