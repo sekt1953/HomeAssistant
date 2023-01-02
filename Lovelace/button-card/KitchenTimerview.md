@@ -1,10 +1,12 @@
 # Kitchen Timer View
 
-## Clock - View image
+## Clock
+
+### Clock - View image
 
 ![](./images/Sk%C3%A6rmbillede%20fra%202023-01-03%2000-17-44.png)
 
-## Clock - View yaml
+### Clock - View yaml
 
 ```yaml
 type: custom:simple-clock-card
@@ -12,11 +14,13 @@ use_military: true
 hide_seconds: false
 ```
 
-## Timer - View image
+## Timer
+
+### Timer - View image
 
 ![](./images/Sk%C3%A6rmbillede%20fra%202023-01-03%2000-17-58.png)
 
-## Timer - View yaml
+### Timer - View yaml
 
 ```yaml
 type: vertical-stack
