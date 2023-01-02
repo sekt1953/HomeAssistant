@@ -15,9 +15,10 @@
 
 * Templates
   * [Button Card Templates](./button-card/ButtonCardTemplates.md)
-* [Home](./button-card/Home.md)
-  * [Clock](./button-card/Home.md#clock)
-  * [Home View](./button-card/Home.md#light)
+* Home
+  * [View](./button-card/Home.md)
+    * [Clock](./button-card/Home.md#clock)
+    * [Light](./button-card/Home.md#light)
 * Kitchen
   * View
     * [Kitchen Timer View](./button-card/KitchenTimerview.md)
