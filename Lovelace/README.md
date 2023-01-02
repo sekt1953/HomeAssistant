@@ -26,6 +26,8 @@
     * [kitchens.yaml](./button-card/KitchensTimerYaml.md)
   * Notify
     * [Telegram](./button-card/KitchenTelegramNotify.md)
-* Server
-  * [Samba-Backup](./button-card/ServerSambaBackup.md)
+* [Server](./button-card/ServerSambaBackup.md#server)
+  * [Clock](./button-card/ServerSambaBackup.md#clock)
+  * [Samba-Backup](./button-card/ServerSambaBackup.md#samba-backup)
+  * [Raspberry Pi 4](./button-card/ServerSambaBackup.md#raspberry-pi-4)
    
