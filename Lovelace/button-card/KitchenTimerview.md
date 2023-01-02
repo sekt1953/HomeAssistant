@@ -2,7 +2,7 @@
 
 ## Clock - View image
 
-![](./images/Sk%C3%A6rmbillede%20fra%202023-01-03%2000-14-10.png)
+![](./images/Sk%C3%A6rmbillede%20fra%202023-01-03%2000-17-44.png)
 
 ## Clock - View yaml
 
@@ -14,7 +14,7 @@ hide_seconds: false
 
 ## Timer - View image
 
-![](./images/Sk%C3%A6rmbillede%20fra%202023-01-03%2000-13-54.png)
+![](./images/Sk%C3%A6rmbillede%20fra%202023-01-03%2000-17-58.png)
 
 ## Timer - View yaml
 
