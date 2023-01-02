@@ -10,12 +10,17 @@
 
 ![Kitchen Timer](./button-card/images/Sk%C3%A6rmbillede%20fra%202022-12-29%2023-31-09.png)
 
-* Button-Card
+* Templates
   * [Button Card Templates](./button-card/ButtonCardTemplates.md)
-  * [Kitchen Timer View](./button-card/KitchenTimerview.md)
-* Script
-  * [Kitchen Timer Start](./button-card/KitchenTimerStart.md)
-* Helpers
-  * [kitchens.yaml](./button-card/KitchensTimerYaml.md)
-* Notify
-  * [Telegram](./button-card/KitchenTelegramNotify.md)
+* Kitchen
+  * View
+    * [Kitchen Timer View](./button-card/KitchenTimerview.md)
+  * Script
+    * [Kitchen Timer Start](./button-card/KitchenTimerStart.md)
+  * Helpers
+    * [kitchens.yaml](./button-card/KitchensTimerYaml.md)
+  * Notify
+    * [Telegram](./button-card/KitchenTelegramNotify.md)
+* Server
+  * [Samba-Backup](./button-card/ServerSambaBackup.md)
+   
