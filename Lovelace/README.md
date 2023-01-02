@@ -20,14 +20,14 @@
 * Kitchen
   * View
     * [Kitchen Timer View](./button-card/KitchenTimerview.md)
-  * Script
-    * [Kitchen Timer Start](./button-card/KitchenTimerStart.md)
   * Helpers
     * [kitchens.yaml](./button-card/KitchensTimerYaml.md)
-  * Notify
-    * [Telegram](./button-card/KitchenTelegramNotify.md)
+  * Script
+    * [Kitchen Timer Start](./button-card/KitchenTimerStart.md)
+  * [Telegram Notify](./button-card/KitchenTelegramNotify.md)
+    * [Configuration](./button-card/KitchenTelegramNotify.md#configuration)
+    * [Automations](./button-card/KitchenTelegramNotify.md#automations)
 * [Server](./button-card/ServerSambaBackup.md#server)
   * [Clock](./button-card/ServerSambaBackup.md#clock)
   * [Samba-Backup](./button-card/ServerSambaBackup.md#samba-backup)
   * [Raspberry Pi 4](./button-card/ServerSambaBackup.md#raspberry-pi-4)
-   
