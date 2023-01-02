@@ -22,8 +22,8 @@
 * Kitchen
   * View
     * [Clock](./button-card/KitchenTimerview.md#clock)
-    * [Timer View](./button-card/KitchenTimerview.md#timer)
-    * [Light - View yaml](./button-card/KitchenTimerview.md#light)
+    * [Timer](./button-card/KitchenTimerview.md#timer)
+    * [Light](./button-card/KitchenTimerview.md#light)
   * Helpers
     * [kitchens.yaml](./button-card/KitchensTimerYaml.md)
   * Script

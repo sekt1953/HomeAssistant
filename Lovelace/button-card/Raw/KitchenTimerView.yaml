@@ -1,32 +1,9 @@
-# Kitchen Timer View
-
-## Clomplet KitchenTimerView.yaml 
-
-[Download Raw KitchenTimerView.yaml](./Raw/KitchenTimerView.yaml)
-
-## Clock
-
-### Clock - View image
-
-![](./images/Sk%C3%A6rmbillede%20fra%202023-01-03%2000-17-44.png)
-
-### Clock - View yaml
-
 ```yaml
-type: custom:simple-clock-card
-use_military: true
-hide_seconds: false
-```
-
-## Timer
-
-### Timer - View image
-
-![Timer - View image](./images/Sk%C3%A6rmbillede%20fra%202023-01-03%2000-34-21.png)
-
-### Timer - View yaml
-
-```yaml
+type: vertical-stack
+cards:
+  - type: custom:simple-clock-card
+    use_military: true
+    hide_seconds: false
   - type: horizontal-stack
     cards:
       - type: custom:button-card
@@ -203,17 +180,6 @@ hide_seconds: false
           - header_nocard
   - type: custom:button-card
     color_type: blank-card
-``` 
-
-## Light
-
-### Light - View image
-
-![Light - View image](./images/Sk%C3%A6rmbillede%20fra%202023-01-03%2000-31-42.png)
-
-### Light - View yaml
-
-```yaml
   - type: horizontal-stack
     cards:
       - type: custom:button-card
