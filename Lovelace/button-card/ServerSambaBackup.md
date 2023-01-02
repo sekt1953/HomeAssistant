@@ -10,6 +10,12 @@
 
 ## Clock
 
+### Clock - View image
+
+![](./images/Sk%C3%A6rmbillede%20fra%202023-01-02%2021-50-21.png)
+
+### Clock - View yaml-code
+
 ```yaml
 type: vertical-stack
 cards:
@@ -18,13 +24,13 @@ cards:
     hide_seconds: true
 ```
 
-## Samba-Backup
+## Samba Backup
 
-### Samba-Backup View images
+### Samba Backup - View images
 
-![Samba-Backup](./images/Sk%C3%A6rmbillede%20fra%202023-01-02%2017-44-45.png)
+![Samba-Backup](./images/Sk%C3%A6rmbillede%20fra%202023-01-02%2021-52-46.png)
 
-### Samba-Backup View yaml-code
+### Samba Backup - View yaml-code
 
 ```yaml
   - type: horizontal-stack
@@ -197,9 +203,9 @@ cards:
 
 ## Raspberry Pi 4
 
-### Raspberry Pi 4 View Image
+### Raspberry Pi 4 - View Image
 
-### Raspberry Pi 4 View yaml-code
+### Raspberry Pi 4 - View yaml-code
 
 ```yaml
 
