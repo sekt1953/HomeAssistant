@@ -23,11 +23,6 @@ hide_seconds: false
 ### Timer - View yaml
 
 ```yaml
-type: vertical-stack
-cards:
-  - type: custom:simple-clock-card
-    use_military: true
-    hide_seconds: false
   - type: horizontal-stack
     cards:
       - type: custom:button-card
