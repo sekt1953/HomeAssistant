@@ -28,7 +28,7 @@ cards:
 
 ### Samba Backup - View images
 
-![Samba-Backup](./images/Sk%C3%A6rmbillede%20fra%202023-01-02%2021-52-46.png)
+![Samba-Backup](./images/Sk%C3%A6rmbillede%20fra%202023-01-02%2022-50-12.png)
 
 ### Samba Backup - View yaml-code
 
@@ -53,12 +53,11 @@ cards:
                 - text-transform: capitalize
               grid:
                 - grid-template-areas: >-
-                    "n sb_status"    
-                    "sb_Last_backup sb_Last_backup"
-                    "sb_backup_local sb_backup_local"  
-                    "sb_backup_remote sb_backup_remote" 
-                    "sb_total_backup_succeeded sb_total_backup_succeeded" 
-                    "sb_total_backup_failed sb_total_backup_failed"
+                    "n sb_status"     "sb_Last_backup_label sb_Last_backup"
+                    "sb_backup_local_label sb_backup_local"  
+                    "sb_backup_remote_label sb_backup_remote" 
+                    "sb_total_backup_succeeded_label sb_total_backup_succeeded" 
+                    "sb_total_backup_failed_label sb_total_backup_failed"
                 - grid-template-columns: 1.5fr 1fr
                 - grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr
               name:
@@ -96,44 +95,69 @@ cards:
                   - font-weight: bold
                   - align-self: start
                   - justify-self: end
+                sb_Last_backup_label:
+                  - align-self: center
+                  - justify-self: start
                 sb_Last_backup:
+                  - align-self: center
+                  - justify-self: end
+                sb_backup_local_label:
                   - align-self: center
                   - justify-self: start
                 sb_backup_local:
                   - align-self: center
+                  - justify-self: end
+                sb_backup_remote_label:
+                  - align-self: center
                   - justify-self: start
                 sb_backup_remote:
+                  - align-self: center
+                  - justify-self: end
+                sb_total_backup_succeeded_label:
                   - align-self: center
                   - justify-self: start
                 sb_total_backup_succeeded:
                   - align-self: center
+                  - justify-self: end
+                sb_total_backup_failed_label:
+                  - align-self: center
                   - justify-self: start
                 sb_total_backup_failed:
                   - align-self: center
-                  - justify-self: start
+                  - justify-self: end
             custom_fields:
               sb_status: >
                 [[[ return `<ha-icon icon="mdi:upload-network" style="width:
-                25px; height: 25px;
-                "></ha-icon><span>${entity.state}</span>`]]]   
+                25px; height:
+                25px;"></ha-icon><span>${entity.state}</span>`]]]   
+              sb_Last_backup_label: |
+                [[[ return `<span>Last Backup:</span>`]]]
               sb_Last_backup: >
-                [[[ return '<span>Last Backup:<b>' +
+                [[[ return '<span><b>' +
                 states['sensor.samba_backup'].attributes.last_backup; +
                 '</b></span>']]]
+              sb_backup_local_label: |
+                [[[ return '<span>Local Backups:<b></b></span>']]]
               sb_backup_local: >
-                [[[ return '<span>Backups Local:<b>' +
+                [[[ return '<span><b>' +
                 states['sensor.samba_backup'].attributes.backups_local; +
                 '</b></span>']]]
+              sb_backup_remote_label: |
+                [[[ return '<span>Backups Remote:</span>']]]
               sb_backup_remote: >
-                [[[ return '<span>Backups Remote:<b>' +
+                [[[ return '<span><b>' +
                 states['sensor.samba_backup'].attributes.backups_remote; +
                 '</b></span>']]]
+              sb_total_backup_succeeded_label: |
+                [[[ return '<span>Total Backups Succeeded:</span>' ]]]
               sb_total_backup_succeeded: >
-                [[[ return '<span>Total Backups Succeeded:<b>' +
+                [[[ return '<span><b>' +
                 states['sensor.samba_backup'].attributes.total_backups_succeeded;
                 + '</b></span>' ]]]
+              sb_total_backup_failed_label: |
+                [[[ return '<span>Total Backup Failed:</span>']]]
               sb_total_backup_failed: >
-                [[[ return '<span>Total Backup Failed:<b>' +
+                [[[ return '<span><b>' +
                 states['sensor.samba_backup'].attributes.total_backups_failed; +
                 '</b></span>']]]
   - type: horizontal-stack
