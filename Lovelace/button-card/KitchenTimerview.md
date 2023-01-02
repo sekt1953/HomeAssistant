@@ -18,7 +18,7 @@ hide_seconds: false
 
 ### Timer - View image
 
-![](./images/Sk%C3%A6rmbillede%20fra%202023-01-03%2000-17-58.png)
+![Timer - View image](./images/Sk%C3%A6rmbillede%20fra%202023-01-03%2000-34-21.png)
 
 ### Timer - View yaml
 
@@ -199,6 +199,17 @@ hide_seconds: false
           - header_nocard
   - type: custom:button-card
     color_type: blank-card
+``` 
+
+## Light
+
+### Light - View image
+
+![Light - View image](./images/Sk%C3%A6rmbillede%20fra%202023-01-03%2000-31-42.png)
+
+### Light - View yaml
+
+```yaml
   - type: horizontal-stack
     cards:
       - type: custom:button-card
