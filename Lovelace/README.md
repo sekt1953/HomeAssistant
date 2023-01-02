@@ -9,9 +9,9 @@
   * [Credits](https://github.com/custom-cards/button-card#credits)
   * [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) 
 
-|Kitchen-Timer|Samba-Backup|
-| :---: | :---: |
-|![Kitchen Timer](./button-card/images/Sk%C3%A6rmbillede%20fra%202022-12-29%2023-31-09.png)|![Samba-backup](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-02%2022-51-39.png)|
+|Home|Kitchen-Timer|Samba-Backup|
+| :---: | :---: | :---: |
+|![](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-02%2023-51-28.png)  |![Kitchen Timer](./button-card/images/Sk%C3%A6rmbillede%20fra%202022-12-29%2023-31-09.png)|![Samba-backup](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-02%2022-51-39.png)|
 
 * Templates
   * [Button Card Templates](./button-card/ButtonCardTemplates.md)
@@ -23,10 +23,10 @@
   * Helpers
     * [kitchens.yaml](./button-card/KitchensTimerYaml.md)
   * Script
-    * [Kitchen Timer Start](./button-card/KitchenTimerStart.md)
+    * [Timer Start](./button-card/KitchenTimerStart.md)
   * [Telegram Notify](./button-card/KitchenTelegramNotify.md)
-    * [Configuration](./button-card/KitchenTelegramNotify.md#configuration)
-    * [Automations](./button-card/KitchenTelegramNotify.md#automations)
+    * [Configuration - /config/configuration.yaml](./button-card/KitchenTelegramNotify.md#configuration)
+    * [Automations - KitchenTimerChangeState](./button-card/KitchenTelegramNotify.md#automations)
 * [Server](./button-card/ServerSambaBackup.md#server)
   * [Clock](./button-card/ServerSambaBackup.md#clock)
   * [Samba-Backup](./button-card/ServerSambaBackup.md#samba-backup)
