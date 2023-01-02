@@ -7,6 +7,7 @@
   * [Community guides:](https://github.com/custom-cards/button-card#community-guides)
     * https://robotnet.dk/2020/homekit-knapper-custom-buttons-home-assistant.html
   * [Credits](https://github.com/custom-cards/button-card#credits)
+  * [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) 
 
 |Kitchen-Timer|Samba-Backup|
 | :---: | :---: |
@@ -14,6 +15,8 @@
 
 * Templates
   * [Button Card Templates](./button-card/ButtonCardTemplates.md)
+* Home
+  * []()
 * Kitchen
   * View
     * [Kitchen Timer View](./button-card/KitchenTimerview.md)

@@ -1,10 +1,15 @@
 # Server Samba-Backup
 
-## Images
+## Intro
+
+For my design of the **samba backup view**, I have used [ADVANCED styling options](https://github.com/custom-cards/button-card#advanced-styling-options) and got a lot of help from the page [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/), a slightly messy page, but full of good information.  
+As on my other pages, I always have a clock at the top, so you always have easy access to the time. As a clock I use a **HACS Frontend simple-clock-card**
+
+## View images
 
 ![Samba-Backup](./images/Sk%C3%A6rmbillede%20fra%202023-01-02%2017-44-45.png)
 
-## Samba-Backup View
+## View yaml-code
 
 ```yaml
 type: vertical-stack
