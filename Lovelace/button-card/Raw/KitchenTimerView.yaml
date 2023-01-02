@@ -1,4 +1,3 @@
-```yaml
 type: vertical-stack
 cards:
   - type: custom:simple-clock-card
@@ -225,4 +224,3 @@ cards:
         template:
           - header_0
           - header_pir
-```
