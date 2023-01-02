@@ -1,15 +1,17 @@
-# Server Samba-Backup
+# Server 
 
-## Intro
+## Samba-Backup
+
+### Intro
 
 For my design of the **samba backup view**, I have used [ADVANCED styling options](https://github.com/custom-cards/button-card#advanced-styling-options) and got a lot of help from the page [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/), a slightly messy page, but full of good information.  
 As on my other pages, I always have a clock at the top, so you always have easy access to the time. As a clock I use a **HACS Frontend simple-clock-card**
 
-## View images
+### Samba-Backup View images
 
 ![Samba-Backup](./images/Sk%C3%A6rmbillede%20fra%202023-01-02%2017-44-45.png)
 
-## View yaml-code
+### Samba-Backup View yaml-code
 
 ```yaml
 type: vertical-stack
@@ -37,13 +39,14 @@ cards:
                 - text-transform: capitalize
               grid:
                 - grid-template-areas: >-
-                    "n sb_status"   "n sb_status"   "sb_Last_backup
-                    sb_Last_backup" "sb_backup_local sb_backup_local" 
-                    "sb_backup_remote sb_backup_remote"
-                    "sb_total_backup_succeeded sb_total_backup_succeeded"
+                    "n sb_status"    
+                    "sb_Last_backup sb_Last_backup"
+                    "sb_backup_local sb_backup_local"  
+                    "sb_backup_remote sb_backup_remote" 
+                    "sb_total_backup_succeeded sb_total_backup_succeeded" 
                     "sb_total_backup_failed sb_total_backup_failed"
-                - grid-template-columns: 1fr 1fr
-                - grid-template-rows: 40px min-content min-content min-content min-content
+                - grid-template-columns: 1.5fr 1fr
+                - grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr
               name:
                 - font-size: 20px
                 - font-weight: bold
@@ -55,7 +58,6 @@ cards:
                     ]]]
                 - align-self: start
                 - justify-self: start
-                - padding-bottom: 4px
               img_cell:
                 - justify-content: start
                 - align-items: start
@@ -80,46 +82,46 @@ cards:
                   - font-weight: bold
                   - align-self: start
                   - justify-self: end
-                  - padding-bottom: 4px
                 sb_Last_backup:
-                  - padding-bottom: 2px
-                  - align-self: middle
+                  - align-self: center
                   - justify-self: start
                 sb_backup_local:
-                  - padding-bottom: 2px
-                  - align-self: middle
+                  - align-self: center
                   - justify-self: start
                 sb_backup_remote:
-                  - align-self: middle
+                  - align-self: center
                   - justify-self: start
                 sb_total_backup_succeeded:
-                  - padding-bottom: 2px
-                  - align-self: middle
+                  - align-self: center
                   - justify-self: start
                 sb_total_backup_failed:
-                  - align-self: middle
+                  - align-self: center
                   - justify-self: start
             custom_fields:
-              sb_status: |
-                [[[ return `<span>${entity.state}</span>` ]]]   
+              sb_status: >
+                [[[ return `<ha-icon icon="mdi:upload-network" style="width:
+                25px; height: 25px;
+                "></ha-icon><span>${entity.state}</span>`]]]   
               sb_Last_backup: >
-                [[[ return '<span>Last Backup:<b> ' +
-                states['sensor.samba_backup'].attributes.last_backup; + 
-                '</b></span>' ]]]
+                [[[ return '<span>Last Backup:<b>' +
+                states['sensor.samba_backup'].attributes.last_backup; +
+                '</b></span>']]]
               sb_backup_local: >
-                [[[ return 'Backups Local: ' +
-                states['sensor.samba_backup'].attributes.backups_local; ]]]
+                [[[ return '<span>Backups Local:<b>' +
+                states['sensor.samba_backup'].attributes.backups_local; +
+                '</b></span>']]]
               sb_backup_remote: >
-                [[[ return 'Backups Remote: ' +
-                states['sensor.samba_backup'].attributes.backups_remote; ]]]
+                [[[ return '<span>Backups Remote:<b>' +
+                states['sensor.samba_backup'].attributes.backups_remote; +
+                '</b></span>']]]
               sb_total_backup_succeeded: >
-                [[[ return 'Total Backups Succeeded: ' +
+                [[[ return '<span>Total Backups Succeeded:<b>' +
                 states['sensor.samba_backup'].attributes.total_backups_succeeded;
-                ]]]
+                + '</b></span>' ]]]
               sb_total_backup_failed: >
-                [[[ return 'Total Backup Failed: ' +
-                states['sensor.samba_backup'].attributes.total_backups_failed;
-                ]]]
+                [[[ return '<span>Total Backup Failed:<b>' +
+                states['sensor.samba_backup'].attributes.total_backups_failed; +
+                '</b></span>']]]
   - type: horizontal-stack
     cards:
       - type: custom:button-card
@@ -127,7 +129,7 @@ cards:
           - header_0
           - header_light
         name: Start Backup Now
-        aspect_ratio: 2/1
+        aspect_ratio: 2/.9
         entity: sensor.samba_backup
         icon: mdi:play
         show_state: false
@@ -168,7 +170,7 @@ cards:
           - header_0
           - header_light
         name: Reset All Counter
-        aspect_ratio: 2/1
+        aspect_ratio: 2/.9
         entity: null
         color: '#000044'
         icon: mdi:restart
@@ -183,5 +185,14 @@ cards:
             - '--mdc-ripple-color': yellow
             - '--mdc-ripple-press-opacity': 0.5
             - font-size: 14px
+```
+
+## Raspberry Pi 4
+
+### Raspberry Pi 4 View Image
+
+### Raspberry Pi 4 View yaml-code
+
+```yaml
 
 ```
