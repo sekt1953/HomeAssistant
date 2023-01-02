@@ -18,4 +18,4 @@
 * Helpers
   * [kitchens.yaml](./button-card/KitchensTimerYaml.md)
 * Notify
-  * [Telegram](./button-card/TelegramNotify.md)
+  * [Telegram](./button-card/KitchenTelegramNotify.md)
