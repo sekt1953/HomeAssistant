@@ -2,7 +2,7 @@
 
 ## Images
 
-![Samba-Backup](./images/Sk%C3%A6rmbillede%20fra%202023-01-02%2017-18-34.png)
+![Samba-Backup](./images/Sk%C3%A6rmbillede%20fra%202023-01-02%2017-44-45.png)
 
 ## Samba-Backup View
 
