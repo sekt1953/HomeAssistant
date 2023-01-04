@@ -7,11 +7,14 @@
   * [Community guides:](https://github.com/custom-cards/button-card#community-guides)
     * https://robotnet.dk/2020/homekit-knapper-custom-buttons-home-assistant.html
   * [Credits](https://github.com/custom-cards/button-card#credits)
-  * [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) 
+  * CSS Grid
+    * [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+    * [CSS Grid Course](https://www.youtube.com/watch?v=t6CBKf8K_Ac)
+      * [Learn CSS Grid for free](https://scrimba.com/learn/cssgrid)
 
 |Home|Kitchen-Timer|Samba-Backup|
 | :---: | :---: | :---: |
-|![](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-02%2023-51-28.png)  |![Kitchen Timer](./button-card/images/Sk%C3%A6rmbillede%20fra%202022-12-29%2023-31-09.png)|![Samba-backup](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-02%2022-51-39.png)|
+|![](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-02%2023-51-28.png)  |![Kitchen Timer](./button-card/images/Sk%C3%A6rmbillede%20fra%202022-12-29%2023-31-09.png)|![Samba-backup](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-04%2002-54-03.png)|
 
 * Templates
   * [Button Card Templates](./button-card/ButtonCardTemplates.md)
