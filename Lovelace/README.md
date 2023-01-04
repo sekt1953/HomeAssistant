@@ -2,6 +2,20 @@
 
 ## Button-Card
 
+### Intro
+
+I use [**custom-cards/button-card**](https://github.com/custom-cards/button-card) from **HACS** to design View's for **Home, Kitchen and Server**.  
+
+* Home View:
+  * In **Home View**, I have an overview of my Light-settings and Motion-Sensor, and can set most of the light from there.
+  * My light switches will have 3 functions:
+    * [**tap_action**](https://github.com/custom-cards/button-card#main-options): which toggles light on/off.
+    * [**double_tap_action**](https://github.com/custom-cards/button-card#main-options): which toggles light between High/Low (50% / 12%) brightness.
+    * [**hold_action**](https://github.com/custom-cards/button-card#main-options): which toggles between Day/Night-light (white 12% / red 1%).
+* Kitchen:
+* Server:
+  * For my design of the **Server View**, I have used [**ADVANCED styling options**](https://github.com/custom-cards/button-card#advanced-styling-options) and got a lot of help from the page [**A Complete Guide to CSS Grid**](https://css-tricks.com/snippets/css/complete-guide-grid/), a slightly messy page, but full of good information.
+
 ### Source
 
 * https://github.com/custom-cards/button-card

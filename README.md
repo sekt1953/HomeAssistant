@@ -122,6 +122,18 @@ I min nye installation har jeg valgt at bruge denne gateway fra LIDL
     * [FreeCAD files:](./FreeCAD/PWM-LightControler/)
     * [Fritzing files:](./Fritzing/PWM-LightControler/)
 
+## 6. [Lovelace](./Lovelace/)
+
+### Button-Card - Home, Kitchen, Server
+
+I use 
+
+* [Button-Card](./Lovelace/README.md#button-card)
+  * [Intro](./Lovelace/README.md#intro)
+  * [Source](./Lovelace/README.md#source)
+  * [Images](./Lovelace/README.md#images)
+  * [Subpage](./Lovelace/README.md#subpage)
+
 ## 10. ESPHome projecter
 
 * Min lysstyring
