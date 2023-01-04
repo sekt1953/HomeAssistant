@@ -1,6 +1,8 @@
 # Lovelace
 
-## Source
+## Button-Card
+
+### Source
 
 * https://github.com/custom-cards/button-card
 * [Community guides:](https://github.com/custom-cards/button-card#community-guides)
@@ -10,8 +12,6 @@
   * [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
   * [CSS Grid Course](https://www.youtube.com/watch?v=t6CBKf8K_Ac)
     * [Learn CSS Grid for free](https://scrimba.com/learn/cssgrid)
-
-## Button-Card
 
 ### Images
 
