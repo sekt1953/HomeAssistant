@@ -29,26 +29,24 @@ I use [**custom-cards/button-card**](https://github.com/custom-cards/button-card
 
 ### Images
 
-|Home|Kitchen-Timer|Server|
-| :---: | :---: | :---: |
-|![](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-02%2023-51-28.png)  |![Kitchen Timer](./button-card/images/Sk%C3%A6rmbillede%20fra%202022-12-29%2023-31-09.png)|![Samba-backup](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-04%2002-54-03.png)|
+|Home|Kitchen|Server|
+|:---:|:---:|:---:|
+|![Home](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-02%2023-51-28.png)  |![Kitchen Timer](./button-card/images/Sk%C3%A6rmbillede%20fra%202022-12-29%2023-31-09.png)|![Samba-backup](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-04%2002-54-03.png)|
 
 ### Subpage
 
 * Templates
   * [Button Card Templates](./button-card/ButtonCardTemplates.md)
-* Home
-  * [View](./button-card/Home.md)
-    * [Clock](./button-card/Home.md#clock)
-    * [Light](./button-card/Home.md#light)
-* Kitchen
+* [Home](./button-card/Home.md)
+  * [Clock](./button-card/Home.md#clock)
+  * [Light](./button-card/Home.md#light)
+* [Kitchen](./button-card/KitchenTimerStart.md)
   * View
-    * [Clomplet Raw KitchenTimerView.yaml](./button-card/Raw/KitchenTimerView.yaml)
     * [Clock](./button-card/KitchenTimerview.md#clock)
     * [Timer](./button-card/KitchenTimerview.md#timer)
     * [Light](./button-card/KitchenTimerview.md#light)
   * Helpers
-    * [kitchens.yaml](./button-card/KitchensTimerYaml.md)
+    * [Timers](./button-card/KitchensTimerYaml.md)
   * Script
     * [Timer Start](./button-card/KitchenTimerStart.md)
   * [Telegram Notify](./button-card/KitchenTelegramNotify.md)
