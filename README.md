@@ -126,7 +126,7 @@ I min nye installation har jeg valgt at bruge denne gateway fra LIDL
 
 ### Button-Card - Home, Kitchen, Server
 
-I use 
+I use [**custom-cards/button-card**](https://github.com/custom-cards/button-card) from **HACS** to design View's for **Home, Kitchen and Server**.  
 
 * [Button-Card](./Lovelace/README.md#button-card)
   * [Intro](./Lovelace/README.md#intro)
