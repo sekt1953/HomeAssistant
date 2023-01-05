@@ -83,9 +83,10 @@ button_card_templates:
 ```yaml
   header_light:
     template: header_0
-    show_last_changed: true
-    show_state: false
     color: blue
+    styles:
+      icon:
+        - color: var(--button-card-light-color-no-temperature)
     state:
       - value: 'off'
         styles:
@@ -100,9 +101,6 @@ button_card_templates:
           label:
             - font-size: 0px
             - color: yellow
-          state:
-            - color: yellow
-            - font-size: 0px
       - value: 'on'
         styles:
           card:
@@ -110,14 +108,9 @@ button_card_templates:
             - '--mdc-ripple-color': yellow
             - '--mdc-ripple-press-opacity': 0.5
             - font-size: 15px
-          icon:
-            - color: yellow
           label:
             - font-size: 0px
             - color: yellow
-          state:
-            - color: yellow
-            - font-size: 0px
 ```
 
 ### header_pir
@@ -125,12 +118,12 @@ button_card_templates:
 ```yaml
   header_pir:
     template: header_0
+    color: blue
     show_last_changed: true
     show_state: false
-    color: blue
     state:
       - value: 'off'
-        icon: mdi:human-male
+        icon: mdi:motion-sensor-off
         styles:
           card:
             - background-color: blue
@@ -140,13 +133,8 @@ button_card_templates:
             - font-size: 14px
           icon:
             - color: gray
-          label:
-            - font-size: 0px
-            - color: yellow
-          state:
-            - color: yellow
-            - font-size: 0px
       - value: 'on'
+        icon: mdi:motion-sensor
         styles:
           card:
             - color: yellow
@@ -155,13 +143,6 @@ button_card_templates:
             - font-size: 15px
           icon:
             - color: yellow
-          label:
-            - font-size: 0px
-            - color: yellow
-          state:
-            - color: yellow
-            - font-size: 0px
-
 ```
 
 ## views
