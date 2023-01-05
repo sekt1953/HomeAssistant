@@ -31,7 +31,7 @@ I use [**custom-cards/button-card**](https://github.com/custom-cards/button-card
 
 |Home|Kitchen|Server|
 |:---:|:---:|:---:|
-|![Home](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-02%2023-51-28.png)  |![Kitchen Timer](./button-card/images/Sk%C3%A6rmbillede%20fra%202022-12-29%2023-31-09.png)|![Samba-backup](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-04%2002-54-03.png)|
+|![Home](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-05%2014-09-45.png)  |![Kitchen Timer](./button-card/images/Sk%C3%A6rmbillede%20fra%202022-12-29%2023-31-09.png)|![Samba-backup](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-04%2002-54-03.png)|
 
 ### Subpage
 

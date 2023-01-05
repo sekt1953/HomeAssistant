@@ -1,5 +1,7 @@
 # Home
 
+![Home](./images/Sk%C3%A6rmbillede%20fra%202023-01-05%2014-09-45.png)
+
 ## Clock
 
 ```yaml
