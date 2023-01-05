@@ -31,6 +31,7 @@ button_card_templates:
 
 ```yaml
   header_timer:
+    template: header_0
     color: red
     show_last_changed: false
     show_state: true
@@ -81,6 +82,7 @@ button_card_templates:
 
 ```yaml
   header_light:
+    template: header_0
     show_last_changed: true
     show_state: false
     color: blue
@@ -122,6 +124,7 @@ button_card_templates:
 
 ```yaml
   header_pir:
+    template: header_0
     show_last_changed: true
     show_state: false
     color: blue
