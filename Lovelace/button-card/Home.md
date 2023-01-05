@@ -100,10 +100,8 @@ cards:
         name: null
       - type: custom:button-card
         template:
-          - header_grid_klima
+          - header_grid_climate
         entity: null
-        variables:
-          var_sensor_0: sensor.processor_temperature
         custom_fields:
           text_0: |
             [[[ return '<span>' + states['sensor.processor_temperature'].state + ' °C</span>' ]]]
@@ -217,10 +215,8 @@ cards:
 ```yaml
       - type: custom:button-card
         template:
-          - header_grid_klima
+          - header_grid_climate
         entity: null
-        variables:
-          var_sensor_0: sensor.processor_temperature
         custom_fields:
           text_0: |
             [[[ return '<span>' + states['sensor.processor_temperature'].state + ' °C</span>' ]]]
