@@ -12,16 +12,38 @@
 
 ## ui-lovelace.yaml
 
+### button_card_templates
+
 ```yaml
 button_card_templates:
+```
+
+### header_0
+
+```yaml
   header_0:
     aspect_ratio: 1.3
     color_type: card
     haptic: success
+```
+
+### header_timer
+
+```yaml
   header_timer:
     color: red
     show_last_changed: false
     show_state: true
+    tap_action:
+      action: call-service
+      service: script.timerstart
+      service_data:
+        entity_id: entity
+    hold_action:
+      action: call-service
+      service: timer.cancel
+      service_data:
+        entity_id: entity
     state:
       - value: idle
         styles:
@@ -53,6 +75,11 @@ button_card_templates:
           state:
             - color: yellow
             - font-size: 14px
+```
+
+### header_light
+
+```yaml
   header_light:
     show_last_changed: true
     show_state: false
@@ -89,6 +116,11 @@ button_card_templates:
           state:
             - color: yellow
             - font-size: 0px
+```
+
+### header_pir
+
+```yaml
   header_pir:
     show_last_changed: true
     show_state: false
@@ -127,10 +159,13 @@ button_card_templates:
             - color: yellow
             - font-size: 0px
 
-[...]
+```
 
+## views
+
+```yaml
 views:
   - title: Home
     icon: mdi:home
-
 [...]
+```

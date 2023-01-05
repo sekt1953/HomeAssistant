@@ -35,16 +35,6 @@ hide_seconds: false
           - header_timer
         name: Blødkogte Æg
         entity: timer.kitchen_001_aeg_blodkogte
-        tap_action:
-          action: call-service
-          service: script.timerstart
-          service_data:
-            entity_id: timer.kitchen_001_aeg_blodkogte
-        hold_action:
-          action: call-service
-          service: timer.cancel
-          service_data:
-            entity_id: timer.kitchen_001_aeg_blodkogte
       - type: custom:button-card
         template:
           - header_0
@@ -203,7 +193,8 @@ hide_seconds: false
           - header_nocard
   - type: custom:button-card
     color_type: blank-card
-``` 
+
+```
 
 ## Light
 
