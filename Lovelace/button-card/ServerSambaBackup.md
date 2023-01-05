@@ -38,19 +38,13 @@ cards:
       - type: vertical-stack
         cards:
           - type: custom:button-card
+            template:
+              - header_grid
             entity: sensor.samba_backup
             icon: mdi:upload-network
             aspect_ratio: 2/1
             name: Samba Backup
             styles:
-              card:
-                - background-color: '#000044'
-                - border-radius: 1%
-                - padding: 5%
-                - color: ivory
-                - font-size: 15px
-                - text-shadow: 0px 0px 5px black
-                - text-transform: capitalize
               grid:
                 - grid-template-areas: >-
                     "n sb_status"     "sb_Last_backup_label sb_Last_backup"
@@ -127,7 +121,7 @@ cards:
                   - justify-self: end
             custom_fields:
               sb_status: >
-                [[[ return `<ha-icon icon="mdi:upload-network" style="width:
+                [[[ return `<ha-icon icon="mdi:folder-network" style="width:
                 25px; height:
                 25px;"></ha-icon><span>${entity.state}</span>`]]]   
               sb_Last_backup_label: |
@@ -223,14 +217,105 @@ cards:
             - '--mdc-ripple-color': yellow
             - '--mdc-ripple-press-opacity': 0.5
             - font-size: 14px
+  - type: custom:button-card
+    color_type: blank-card
 ```
 
 ## Raspberry Pi 4
 
 ### Raspberry Pi 4 - View Image
 
+![Raspberry](./images/Sk%C3%A6rmbillede%20fra%202023-01-05%2014-31-13.png)
+
 ### Raspberry Pi 4 - View yaml-code
 
 ```yaml
-
+  - type: horizontal-stack
+    cards:
+      - type: custom:button-card
+        template:
+          - header_grid
+        aspect_ratio: 1.8/1
+        name: ''
+        styles:
+          grid:
+            - grid-template-areas: >
+                "label_n label_n" "label_0 text_0" "label_1 text_1" "label_2
+                text_2" "label_3 text_3" "label_4 text_4" "label_5 text_5"
+                "label_6 text_6"
+            - grid-template-rows: 2fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr
+        custom_fields:
+          label_0: >
+            [[[ return '<ha-icon icon="mdi:thermometer" style="width: 15px;
+            height: 15px;"></ha-icon>' + 
+                  '<span>' + ' ' + 
+                   states['sensor.processor_temperature'].attributes.friendly_name +
+                  '</span>']]]
+          label_1: >
+            [[[ return '<ha-icon icon="mdi:fan" style="width: 15px; height:
+            15px;"></ha-icon>' + 
+                  '<span>' + ' ' + 
+                states['sensor.argon_one_addon_fan_speed'].attributes.friendly_name; +
+                '</span>']]]
+          label_2: >
+            [[[ return '<ha-icon icon="mdi:harddisk" style="width: 15px; height:
+            15px;"></ha-icon>' + 
+                  '<span>' + ' ' + 
+                states['sensor.disk_use'].attributes.friendly_name; +
+                '</span>']]]
+          label_3: >
+            [[[ return '<ha-icon icon="mdi:harddisk" style="width: 15px; height:
+            15px;"></ha-icon>' + 
+                  '<span>' + ' ' + 
+                states['sensor.disk_free'].attributes.friendly_name; +
+                '</span>']]]
+          label_4: >
+            [[[ return '<ha-icon icon="mdi:harddisk" style="width: 15px; height:
+            15px;"></ha-icon>' + 
+                  '<span>' + ' ' + 
+                states['sensor.disk_use_percent'].attributes.friendly_name; +
+                '</span>']]]
+          label_5: >
+            [[[ return '<ha-icon icon="mdi:cpu-32-bit" style="width: 15px;
+            height: 15px;"></ha-icon>' + 
+                  '<span>' + ' ' + 
+                states['sensor.processor_use'].attributes.friendly_name; +
+                '</span>']]]
+          label_6: >
+            [[[ return '<ha-icon icon="mdi:memory" style="width: 15px; height:
+            15px;"></ha-icon>' + 
+                  '<span>' + ' ' + 
+                states['sensor.memory_free'].attributes.friendly_name; +
+                '</span>']]]
+          label_n: >
+            [[[ return '<ha-icon icon="mdi:raspberry-pi"
+            style="width:40px;"></ha-icon><span> Raspberry Pi 4</span>']]]
+          text_0: |
+            [[[ return '<span><b>' +
+              states['sensor.processor_temperature'].state + 
+              ' °C</b></span>' ]]]
+          text_1: |
+            [[[ return '<span><b>' +
+              states['sensor.argon_one_addon_fan_speed'].state + 
+              '</b></span>' ]]]
+          text_2: |
+            [[[ return '<span><b>' +
+              states['sensor.disk_use'].state + 
+              ' GiB</b></span>']]]
+          text_3: |
+            [[[ return '<span><b>' +
+              states['sensor.disk_free'].state + 
+              ' GiB</b></span>']]]
+          text_4: |
+            [[[ return '<span><b>' +
+              states['sensor.disk_use_percent'].state + 
+              ' %</b></span>']]]
+          text_5: |
+            [[[ return '<span><b>' +
+              states['sensor.processor_use'].state + 
+              ' %</b></span>']]]
+          text_6: |
+            [[[ return '<span><b>' +
+              states['sensor.memory_free'].state + 
+              ' MiB</b></span>']]]
 ```
