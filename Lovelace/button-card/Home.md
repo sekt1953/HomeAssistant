@@ -102,30 +102,20 @@ cards:
         template:
           - header_grid_klima
         entity: null
+        variables:
+          var_sensor_0: sensor.processor_temperature
         custom_fields:
-          label_0: >
-            [[[ return '<ha-icon icon="mdi:thermometer" style="width:
-            15px;"></ha-icon>' ]]]
-          text_0: >
+          text_0: |
             [[[ return '<span>' + states['sensor.processor_temperature'].state +
-            ' °C</span>' ]]]
-          label_1: >
-            [[[ return '<ha-icon icon="mdi:water-percent" style="width:
-            15px;"></ha-icon>' ]]]
+              ' °C</span>' ]]]
           text_1: >
             [[[ return '<span>' +
             states['sensor.klima280_bme280_humidity'].state + ' %</b></span>'
             ]]]
-          label_2: >
-            [[[ return '<ha-icon icon="mdi:gauge" style="width:
-            15px;"></ha-icon>' ]]]
           text_2: >
             [[[ return '<span>' +
             states['sensor.klima280_bme280_pressure'].state + ' hPa</b></span>'
             ]]]
-          label_3: >
-            [[[ return '<ha-icon icon="mdi:weather-sunny" style="width:
-            15px;"></ha-icon>' ]]]
           text_3: >
             [[[ return '<span>' +
             states['sensor.klima280_bh1750_illuminance'].state + '
@@ -227,4 +217,24 @@ cards:
           - header_light
         entity: null
         name: null
+```
+
+### Climate Card
+
+```yaml
+      - type: custom:button-card
+        template:
+          - header_grid_klima
+        entity: null
+        variables:
+          var_sensor_0: sensor.processor_temperature
+        custom_fields:
+          text_0: |
+            [[[ return '<span>' + states['sensor.processor_temperature'].state + ' °C</span>' ]]]
+          text_1: >
+            [[[ return '<span>' + states['sensor.klima280_bme280_humidity'].state + ' %</b></span>' ]]]
+          text_2: >
+            [[[ return '<span>' + states['sensor.klima280_bme280_pressure'].state + ' hPa</b></span>' ]]]
+          text_3: >
+            [[[ return '<span>' + states['sensor.klima280_bh1750_illuminance'].state + ' lx</b></span>' ]]]
 ```
