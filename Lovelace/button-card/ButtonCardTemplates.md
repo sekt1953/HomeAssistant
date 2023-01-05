@@ -18,11 +18,18 @@
 button_card_templates:
 ```
 
+### header_nocard
+
+```yaml
+  header_nocard:
+    aspect_ratio: 1.3
+```
+
 ### header_0
 
 ```yaml
   header_0:
-    aspect_ratio: 1.3
+    template: header_nocard
     color_type: card
     haptic: success
 ```
