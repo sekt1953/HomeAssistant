@@ -152,6 +152,143 @@ button_card_templates:
             - color: yellow
 ```
 
+### header_grid_klima
+
+```yaml
+  header_grid_klima:
+    template: header_0
+    color: blue
+    name: ''
+    styles:
+      card:
+        - padding: 5%
+        - color: ivory
+        - font-size: 11px
+        - text-shadow: 0px 0px 5px black
+      grid:
+        - grid-template-areas: '"label_0 text_0" "label_1 text_1"  "label_2 text_2" "label_3 text_3"'
+        - grid-template-columns: 1fr 1fr
+        - grid-template-rows: 1fr 1fr 1fr 1fr
+      custom_fields:
+        label_0:
+          - align-self: center
+          - justify-self: start
+        text_0:
+          - align-self: center
+          - justify-self: end
+        label_1:
+          - align-self: center
+          - justify-self: start
+        text_1:
+          - align-self: center
+          - justify-self: end
+        label_2:
+          - align-self: center
+          - justify-self: start
+        text_2:
+          - align-self: center
+          - justify-self: end
+        label_3:
+          - align-self: center
+          - justify-self: start
+        text_3:
+          - align-self: center
+          - justify-self: end
+```
+
+### header_grid
+
+```yaml
+  header_grid:
+    aspect_ratio: 1.5/1
+    styles:
+      card:
+        - background-color: '#000044'
+        - border-radius: 1%
+        - padding: 5%
+        - color: ivory
+        - font-size: 15px
+        - text-shadow: 0px 0px 5px black
+        - text-transform: capitalize
+      grid:
+        - grid-template-areas: >-
+            "label_0 text_0" "label_1 text_1" "label_2 text_2" "label_3 text_3"
+            "label_4 text_4" "label_5 text_5" "label_6 text_6" "label_7 text_7"
+            "label_8 text_8" "label_9 text_9"
+        - grid-template-columns: 1.5fr 1fr
+        - grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+      custom_fields:
+        label_0:
+          - align-self: center
+          - justify-self: start
+        text_0:
+          - align-self: center
+          - justify-self: end
+        label_1:
+          - align-self: center
+          - justify-self: start
+        text_1:
+          - align-self: center
+          - justify-self: end
+        label_2:
+          - align-self: center
+          - justify-self: start
+        text_2:
+          - align-self: center
+          - justify-self: end
+        label_3:
+          - align-self: center
+          - justify-self: start
+        text_3:
+          - align-self: center
+          - justify-self: end
+        label_4:
+          - align-self: center
+          - justify-self: start
+        text_4:
+          - align-self: center
+          - justify-self: end
+        label_5:
+          - align-self: center
+          - justify-self: start
+        text_5:
+          - align-self: center
+          - justify-self: end
+        label_6:
+          - align-self: center
+          - justify-self: start
+        text_6:
+          - align-self: center
+          - justify-self: end
+        label_7:
+          - font-size: 25px
+          - align-self: center
+          - justify-self: start
+        text_7:
+          - align-self: center
+          - justify-self: end
+        label_8:
+          - align-self: center
+          - justify-self: start
+        text_8:
+          - align-self: center
+          - justify-self: end
+        label_9:
+          - align-self: center
+          - justify-self: start
+        text_9:
+          - align-self: center
+          - justify-self: end
+        label_n:
+          - font-size: 20px
+          - font-weight: bold
+          - align-self: start
+          - justify-self: start
+        text_n:
+          - align-self: center
+          - justify-self: end
+```
+
 ## views
 
 ```yaml

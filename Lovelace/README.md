@@ -40,6 +40,7 @@ I use [**custom-cards/button-card**](https://github.com/custom-cards/button-card
 * [Home](./button-card/Home.md)
   * [Clock](./button-card/Home.md#clock)
   * [Light](./button-card/Home.md#light)
+    * Klima
 * [Kitchen](./button-card/KitchenTimerStart.md)
   * View
     * [Clock](./button-card/KitchenTimerview.md#clock)

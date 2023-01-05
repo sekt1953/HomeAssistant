@@ -28,13 +28,13 @@ cards:
       - type: custom:button-card
         template:
           - header_light
-        entity: null
-        name: null
+        name: Spisekrog
+        entity: light.ikea_of_sweden_tradfri_bulb_e27_cws_806lm_light
       - type: custom:button-card
         template:
           - header_light
-        name: Spisekrog
-        entity: light.ikea_of_sweden_tradfri_bulb_e27_cws_806lm_light
+        entity: null
+        name: klima
   - type: horizontal-stack
     cards:
       - type: custom:button-card
@@ -56,7 +56,7 @@ cards:
         template:
           - header_light
         entity: null
-        name: null
+        name: klima
   - type: horizontal-stack
     cards:
       - type: custom:button-card
@@ -98,9 +98,36 @@ cards:
         name: null
       - type: custom:button-card
         template:
-          - header_light
+          - header_grid_klima
         entity: null
-        name: null
+        custom_fields:
+          label_0: >
+            [[[ return '<ha-icon icon="mdi:thermometer" style="width:
+            15px;"></ha-icon>' ]]]
+          text_0: >
+            [[[ return '<span>' + states['sensor.processor_temperature'].state +
+            ' °C</span>' ]]]
+          label_1: >
+            [[[ return '<ha-icon icon="mdi:water-percent" style="width:
+            15px;"></ha-icon>' ]]]
+          text_1: >
+            [[[ return '<span>' +
+            states['sensor.klima280_bme280_humidity'].state + ' %</b></span>'
+            ]]]
+          label_2: >
+            [[[ return '<ha-icon icon="mdi:gauge" style="width:
+            15px;"></ha-icon>' ]]]
+          text_2: >
+            [[[ return '<span>' +
+            states['sensor.klima280_bme280_pressure'].state + ' hPa</b></span>'
+            ]]]
+          label_3: >
+            [[[ return '<ha-icon icon="mdi:weather-sunny" style="width:
+            15px;"></ha-icon>' ]]]
+          text_3: >
+            [[[ return '<span>' +
+            states['sensor.klima280_bh1750_illuminance'].state + '
+            lx</b></span>' ]]]
   - type: horizontal-stack
     cards:
       - type: custom:button-card
