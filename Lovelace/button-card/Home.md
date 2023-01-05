@@ -103,8 +103,8 @@ cards:
           - header_grid_climate
         entity: null
         custom_fields:
-          text_0: |
-            [[[ return '<span>' + states['sensor.processor_temperature'].state + ' °C</span>' ]]]
+          text_0: >
+            [[[ return '<span>' + states['sensor.klima280_bme280_temperature'].state + ' °C</span>' ]]]
           text_1: >
             [[[ return '<span>' + states['sensor.klima280_bme280_humidity'].state + ' %</b></span>' ]]]
           text_2: >
@@ -218,8 +218,8 @@ cards:
           - header_grid_climate
         entity: null
         custom_fields:
-          text_0: |
-            [[[ return '<span>' + states['sensor.processor_temperature'].state + ' °C</span>' ]]]
+          text_0: >
+            [[[ return '<span>' + states['sensor.klima280_bme280_temperature'].state + ' °C</span>' ]]]
           text_1: >
             [[[ return '<span>' + states['sensor.klima280_bme280_humidity'].state + ' %</b></span>' ]]]
           text_2: >
