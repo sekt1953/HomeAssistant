@@ -31,7 +31,7 @@ I use [**custom-cards/button-card**](https://github.com/custom-cards/button-card
 
 |Home|Kitchen|Server|
 |:---:|:---:|:---:|
-|![Home](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-05%2014-09-45.png)  |![Kitchen Timer](./button-card/images/Sk%C3%A6rmbillede%20fra%202022-12-29%2023-31-09.png)|![Samba-backup](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-04%2002-54-03.png)|
+|![Home](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-06%2016-09-33.png)  |![Kitchen Timer](./button-card/images/Sk%C3%A6rmbillede%20fra%202022-12-29%2023-31-09.png)|![Samba-backup](./button-card/images/Sk%C3%A6rmbillede%20fra%202023-01-04%2002-54-03.png)|
 
 ### Subpage
 
@@ -40,7 +40,11 @@ I use [**custom-cards/button-card**](https://github.com/custom-cards/button-card
 * [Home](./button-card/Home.md)
   * [Clock](./button-card/Home.md#clock)
   * [Light](./button-card/Home.md#light)
-    * [Climate Card](./button-card/Home.md#climate-card)
+    * [light - header_light_bw](./button-card/Home.md#light---header_light_bw)
+    * [light- header_light_color](./button-card/Home.md#light---header_light_color)
+    * [Climate - header_grid_4_name](./button-card/Home.md#climate---header_grid_4_name)
+    * [Climate - header_grid_4_lux](./button-card/Home.md#climate---header_grid_4_lux)
+
 * [Kitchen](./button-card/KitchenTimerStart.md)
   * View
     * [Clock](./button-card/KitchenTimerview.md#clock)

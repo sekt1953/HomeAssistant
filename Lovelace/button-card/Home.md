@@ -1,6 +1,6 @@
 # Home
 
-![Home](./images/Sk%C3%A6rmbillede%20fra%202023-01-06%2012-21-40.png)
+![Home](./images/Sk%C3%A6rmbillede%20fra%202023-01-06%2016-09-33.png)
 
 ## Clock
 
