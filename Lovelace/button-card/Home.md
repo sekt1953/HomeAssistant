@@ -24,12 +24,12 @@ cards:
         entity: binary_sensor.bad_ms01_iaszone
       - type: custom:button-card
         template:
-          - header_light
+          - header_light_bw
         entity: light.kitchentablelight
         name: Køkken Bord
       - type: custom:button-card
         template:
-          - header_light
+          - header_light_color
         name: Spisekrog
         entity: light.ikea_of_sweden_tradfri_bulb_e27_cws_806lm_light
       - type: custom:button-card
@@ -59,17 +59,17 @@ cards:
         entity: binary_sensor.bad_ms01_iaszone
       - type: custom:button-card
         template:
-          - header_light
+          - header_light_bw
         entity: light.kitchen_old
         name: Køkken Bord
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
         entity: null
         name: null
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
         entity: null
         name: klima
   - type: horizontal-stack
@@ -81,34 +81,34 @@ cards:
         entity: binary_sensor.bad_ms01_iaszone
       - type: custom:button-card
         template:
-          - header_light
+          - header_light_color
         entity: light.tz3210_sroezl0s_ts0504b_light
         name: Bad loft
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
         entity: null
         name: null
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
         entity: null
         name: null
   - type: horizontal-stack
     cards:
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
         entity: null
         name: Stue
       - type: custom:button-card
         template:
-          - header_light
+          - header_light_color
         entity: light.tz3000_dbou1ap4_ts0505a_light
         name: Kohorn
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
         entity: null
         name: null
       - type: custom:button-card
@@ -136,66 +136,66 @@ cards:
     cards:
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
         entity: null
         name: null
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
         entity: null
         name: null
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
         entity: null
         name: null
       - type: custom:button-card
         template:
-          - header_light
-        entity: null
-        name: null
-  - type: horizontal-stack
-    cards:
-      - type: custom:button-card
-        template:
-          - header_light
-        entity: null
-        name: null
-      - type: custom:button-card
-        template:
-          - header_light
-        entity: null
-        name: null
-      - type: custom:button-card
-        template:
-          - header_light
-        entity: null
-        name: null
-      - type: custom:button-card
-        template:
-          - header_light
+          - header_blue
         entity: null
         name: null
   - type: horizontal-stack
     cards:
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
         entity: null
         name: null
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
         entity: null
         name: null
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
         entity: null
         name: null
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
+        entity: null
+        name: null
+  - type: horizontal-stack
+    cards:
+      - type: custom:button-card
+        template:
+          - header_blue
+        entity: null
+        name: null
+      - type: custom:button-card
+        template:
+          - header_blue
+        entity: null
+        name: null
+      - type: custom:button-card
+        template:
+          - header_blue
+        entity: null
+        name: null
+      - type: custom:button-card
+        template:
+          - header_blue
         entity: null
         name: null
   - type: horizontal-stack
@@ -216,19 +216,39 @@ cards:
                 ]]]
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
         entity: null
         name: null
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
         entity: null
         name: null
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
         entity: null
         name: null
+```
+
+### Light - header_light_bw
+
+```yaml
+      type: custom:button-card
+      template:
+        - header_light_bw
+      entity: light.kitchentablelight
+      name: Køkken Bord
+```
+
+### Light - header_light_color
+
+```yaml
+      type: custom:button-card
+      template:
+        - header_light_color
+      entity: light.tz3000_dbou1ap4_ts0505a_light
+      name: Kohorn
 ```
 
 ### Climate - header_grid_4_name

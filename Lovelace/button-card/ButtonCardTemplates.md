@@ -67,14 +67,64 @@ button_card_templates:
 
 ```
 
-### header_light
+### header_light_color
 
 ```yaml
-  header_light:
+  header_light_color:
     template: header_blue
     styles:
       icon:
         - color: var(--button-card-light-color-no-temperature)
+    tap_action:
+      action: call-service
+      service: light.toggle
+      service_data:
+        entity_id: entity
+        brightness_pct: 1
+        color_temp_kelvin: 2000
+    double_tap_action:
+      action: call-service
+      service: light.turn_on
+      service_data:
+        entity_id: entity
+        brightness_pct: 50
+        color_temp_kelvin: 6535
+    hold_action:
+      action: call-service
+      service: light.turn_on
+      service_data:
+        entity_id: entity
+        brightness_pct: 5
+        xy_color:
+          - 0.7
+          - 0.3
+```
+
+### header_light_bw
+
+```yaml
+  header_light_bw:
+    template: header_blue
+    styles:
+      icon:
+        - color: var(--button-card-light-color-no-temperature)
+    tap_action:
+      action: call-service
+      service: light.toggle
+      service_data:
+        entity_id: entity
+        brightness_pct: 25
+    double_tap_action:
+      action: call-service
+      service: light.turn_on
+      service_data:
+        entity_id: entity
+        brightness_pct: 50
+    hold_action:
+      action: call-service
+      service: light.turn_off
+      service_data:
+        entity_id: entity
 ```
 
 ### header_pir
