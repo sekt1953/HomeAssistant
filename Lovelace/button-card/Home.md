@@ -1,6 +1,6 @@
 # Home
 
-![Home](./images/Sk%C3%A6rmbillede%20fra%202023-01-05%2014-09-45.png)
+![Home](./images/Sk%C3%A6rmbillede%20fra%202023-01-06%2012-21-40.png)
 
 ## Clock
 
@@ -34,9 +34,22 @@ cards:
         entity: light.ikea_of_sweden_tradfri_bulb_e27_cws_806lm_light
       - type: custom:button-card
         template:
-          - header_light
+          - header_grid_4_name
         entity: null
-        name: klima
+        name: 'Køkken:'
+        custom_fields:
+          text_1: >
+            [[[ return '<span>' +
+            states['sensor.pwm_kokken_bme280_temperature'].state + ' °C</span>'
+            ]]]
+          text_2: >
+            [[[ return '<span>' +
+            states['sensor.pwm_kokken_bme280_humidity'].state + ' %</b></span>'
+            ]]]
+          text_3: >
+            [[[ return '<span>' +
+            states['sensor.pwm_kokken_bme280_pressure'].state + '
+            hPa</b></span>' ]]]
   - type: horizontal-stack
     cards:
       - type: custom:button-card
@@ -47,8 +60,8 @@ cards:
       - type: custom:button-card
         template:
           - header_light
-        entity: null
-        name: null
+        entity: light.kitchen_old
+        name: Køkken Bord
       - type: custom:button-card
         template:
           - header_light
@@ -100,17 +113,25 @@ cards:
         name: null
       - type: custom:button-card
         template:
-          - header_grid_climate
+          - header_grid_4_lux
         entity: null
         custom_fields:
           text_0: >
-            [[[ return '<span>' + states['sensor.klima280_bme280_temperature'].state + ' °C</span>' ]]]
+            [[[ return '<span>' +
+            states['sensor.klima280_bme280_temperature'].state +
+              ' °C</span>' ]]]
           text_1: >
-            [[[ return '<span>' + states['sensor.klima280_bme280_humidity'].state + ' %</b></span>' ]]]
+            [[[ return '<span>' +
+            states['sensor.klima280_bme280_humidity'].state + ' %</b></span>'
+            ]]]
           text_2: >
-            [[[ return '<span>' + states['sensor.klima280_bme280_pressure'].state + ' hPa</b></span>' ]]]
+            [[[ return '<span>' +
+            states['sensor.klima280_bme280_pressure'].state + ' hPa</b></span>'
+            ]]]
           text_3: >
-            [[[ return '<span>' + states['sensor.klima280_bh1750_illuminance'].state + ' lx</b></span>' ]]]
+            [[[ return '<span>' +
+            states['sensor.klima280_bh1750_illuminance'].state + '
+            lx</b></span>' ]]]
   - type: horizontal-stack
     cards:
       - type: custom:button-card
@@ -210,20 +231,37 @@ cards:
         name: null
 ```
 
-### Climate Card
+### Climate - header_grid_4_name
 
 ```yaml
-      - type: custom:button-card
-        template:
-          - header_grid_climate
-        entity: null
-        custom_fields:
-          text_0: >
-            [[[ return '<span>' + states['sensor.klima280_bme280_temperature'].state + ' °C</span>' ]]]
-          text_1: >
-            [[[ return '<span>' + states['sensor.klima280_bme280_humidity'].state + ' %</b></span>' ]]]
-          text_2: >
-            [[[ return '<span>' + states['sensor.klima280_bme280_pressure'].state + ' hPa</b></span>' ]]]
-          text_3: >
-            [[[ return '<span>' + states['sensor.klima280_bh1750_illuminance'].state + ' lx</b></span>' ]]]
+type: custom:button-card
+template:
+  - header_grid_4_name
+entity: null
+name: 'Køkken:'
+custom_fields:
+  text_1: >
+    [[[ return '<span>' + states['sensor.pwm_kokken_bme280_temperature'].state + ' °C</span>' ]]]
+  text_2: >
+    [[[ return '<span>' + states['sensor.pwm_kokken_bme280_humidity'].state + ' %</b></span>' ]]]
+  text_3: >
+    [[[ return '<span>' + states['sensor.pwm_kokken_bme280_pressure'].state + ' hPa</b></span>' ]]]
+```
+
+### Climate - header_grid_4_lux
+
+```yaml
+type: custom:button-card
+template:
+  - header_grid_4_lux
+entity: null
+custom_fields:
+  text_0: |
+    [[[ return '<span>' + states['sensor.klima280_bme280_temperature'].state + ' °C</span>' ]]]
+  text_1: >
+    [[[ return '<span>' + states['sensor.klima280_bme280_humidity'].state + ' %</b></span>' ]]]
+  text_2: >
+    [[[ return '<span>' + states['sensor.klima280_bme280_pressure'].state + ' hPa</b></span>' ]]]
+  text_3: >
+    [[[ return '<span>' + states['sensor.klima280_bh1750_illuminance'].state + ' lx</b></span>' ]]]
 ```
