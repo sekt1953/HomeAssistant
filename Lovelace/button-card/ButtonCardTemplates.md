@@ -70,6 +70,7 @@ button_card_templates:
 ### header_light
 
 ```yaml
+  header_light:
     template: header_blue
     styles:
       icon:
