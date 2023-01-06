@@ -34,6 +34,60 @@ button_card_templates:
     haptic: success
 ```
 
+### header_blue
+
+```yaml
+  header_blue:
+    template: header_0
+    color: blue
+    show_last_changed: true
+    show_state: false
+    state:
+      - value: 'off'
+        styles:
+          card:
+            - background-color: blue
+            - filter: opacity(55%)
+            - '--mdc-ripple-color': yellow
+            - '--mdc-ripple-press-opacity': 0.5
+            - font-size: 14px
+          icon:
+            - color: gray
+          label:
+            - font-size: 0px
+            - color: yellow
+      - value: 'on'
+        styles:
+          card:
+            - background-color: '#000044'
+            - color: yellow
+            - '--mdc-ripple-color': yellow
+            - '--mdc-ripple-press-opacity': 0.5
+            - font-size: 15px
+
+```
+
+### header_light
+
+```yaml
+    template: header_blue
+    styles:
+      icon:
+        - color: var(--button-card-light-color-no-temperature)
+```
+
+### header_pir
+
+```yaml
+  header_pir:
+    template: header_blue
+    state:
+      - value: 'on'
+        styles:
+          icon:
+            - color: yellow
+```
+
 ### header_timer
 
 ```yaml
@@ -56,7 +110,7 @@ button_card_templates:
       - value: idle
         styles:
           card:
-            - filter: opacity(50%)
+            - filter: opacity(85%)
             - '--mdc-ripple-color': blue
             - '--mdc-ripple-press-opacity': 0.5
             - font-size: 14px
@@ -85,82 +139,114 @@ button_card_templates:
             - font-size: 14px
 ```
 
-### header_light
+### header_grid_4
 
 ```yaml
-  header_light:
-    template: header_0
-    color: blue
-    styles:
-      icon:
-        - color: var(--button-card-light-color-no-temperature)
-    state:
-      - value: 'off'
-        styles:
-          card:
-            - background-color: blue
-            - filter: opacity(50%)
-            - '--mdc-ripple-color': yellow
-            - '--mdc-ripple-press-opacity': 0.5
-            - font-size: 14px
-          icon:
-            - color: gray
-          label:
-            - font-size: 0px
-            - color: yellow
-      - value: 'on'
-        styles:
-          card:
-            - color: yellow
-            - '--mdc-ripple-color': yellow
-            - '--mdc-ripple-press-opacity': 0.5
-            - font-size: 15px
-          label:
-            - font-size: 0px
-            - color: yellow
-```
-
-### header_pir
-
-```yaml
-  header_pir:
-    template: header_0
-    color: blue
-    show_last_changed: true
-    show_state: false
-    state:
-      - value: 'off'
-        icon: mdi:motion-sensor-off
-        styles:
-          card:
-            - background-color: blue
-            - filter: opacity(50%)
-            - '--mdc-ripple-color': yellow
-            - '--mdc-ripple-press-opacity': 0.5
-            - font-size: 14px
-          icon:
-            - color: gray
-      - value: 'on'
-        icon: mdi:motion-sensor
-        styles:
-          card:
-            - color: yellow
-            - '--mdc-ripple-color': yellow
-            - '--mdc-ripple-press-opacity': 0.5
-            - font-size: 15px
-          icon:
-            - color: yellow
-```
-
-### header_grid_klima
-
-```yaml
-  header_grid_klima:
+  header_grid_4:
     template: header_0
     color: blue
     name: ''
+    tap_action:
+      action: navigate
+      navigation_path: /lovelace/climate
     styles:
       card:
+        - background-color: '#000044'
+        - padding: 5%
+        - color: ivory
+        - font-size: 11px
+        - text-shadow: 0px 0px 5px black
+      custom_fields:
+        label_0:
+          - align-self: center
+          - justify-self: start
+        text_0:
+          - align-self: center
+          - justify-self: end
+        label_1:
+          - align-self: center
+          - justify-self: start
+        text_1:
+          - align-self: center
+          - justify-self: end
+        label_2:
+          - align-self: center
+          - justify-self: start
+        text_2:
+          - align-self: center
+          - justify-self: end
+        label_3:
+          - align-self: center
+          - justify-self: start
+        text_3:
+          - align-self: center
+          - justify-self: end
+```
+
+### header_grid_4_lux
+
+```yaml
+  header_grid_4_lux:
+    template: header_grid_4
+    styles:
+      grid:
+        - grid-template-areas: '"label_0 text_0" "label_1 text_1"  "label_2 text_2" "label_3 text_3"'
+        - grid-template-columns: 1fr 1fr
+        - grid-template-rows: 1fr 1fr 1fr 1fr
+    custom_fields:
+      label_0: >
+        [[[ return `<ha-icon icon="mdi:thermometer"
+        style="width:15px;"></ha-icon>` ]]]
+      label_1: >
+        [[[ return '<ha-icon icon="mdi:water-percent"
+        style="width:15px;"></ha-icon>' ]]]
+      label_2: >
+        [[[ return '<ha-icon icon="mdi:gauge" style="width:15px;"></ha-icon>'
+        ]]]
+      label_3: >
+        [[[ return '<ha-icon icon="mdi:weather-sunny"
+        style="width:15px;"></ha-icon>' ]]]
+```
+
+### header_grid_4_name
+
+```yaml
+  header_grid_4_name:
+    template: header_grid_4
+    styles:
+      grid:
+        - grid-template-areas: '"n n" "label_1 text_1"  "label_2 text_2" "label_3 text_3"'
+        - grid-template-columns: 1fr 1fr
+        - grid-template-rows: 1fr 1fr 1fr 1fr
+      name:
+        - align-self: center
+        - justify-self: start
+        - font-weight: bold
+    custom_fields:
+      label_1: >
+        [[[ return `<ha-icon icon="mdi:thermometer"
+        style="width:15px;"></ha-icon>` ]]]
+      label_2: >
+        [[[ return '<ha-icon icon="mdi:water-percent"
+        style="width:15px;"></ha-icon>' ]]]
+      label_3: >
+        [[[ return '<ha-icon icon="mdi:gauge" style="width: 15px;"></ha-icon>'
+        ]]]
+```
+
+### header_grid_climate
+
+```yaml
+header_grid_climate:
+    template: header_0
+    color: blue
+    name: ''
+    tap_action:
+      action: navigate
+      navigation_path: /lovelace/climate
+    styles:
+      card:
+        - background-color: '#000044'
         - padding: 5%
         - color: ivory
         - font-size: 11px
@@ -194,7 +280,20 @@ button_card_templates:
         text_3:
           - align-self: center
           - justify-self: end
-```
+    custom_fields:
+      label_0: >
+        [[[ return `<ha-icon icon="mdi:thermometer" style="width:
+        15px;"></ha-icon>` ]]]
+      label_1: >
+        [[[ return '<ha-icon icon="mdi:water-percent" style="width:
+        15px;"></ha-icon>' ]]]
+      label_2: >
+        [[[ return '<ha-icon icon="mdi:gauge" style="width: 15px;"></ha-icon>'
+        ]]]
+      label_3: >
+        [[[ return '<ha-icon icon="mdi:weather-sunny"
+        style="width:15px;"></ha-icon>' ]]]
+  ```
 
 ### header_grid
 
@@ -204,12 +303,10 @@ button_card_templates:
     styles:
       card:
         - background-color: '#000044'
-        - border-radius: 1%
         - padding: 5%
         - color: ivory
         - font-size: 15px
         - text-shadow: 0px 0px 5px black
-        - text-transform: capitalize
       grid:
         - grid-template-areas: >-
             "label_0 text_0" "label_1 text_1" "label_2 text_2" "label_3 text_3"
