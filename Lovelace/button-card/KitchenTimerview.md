@@ -114,21 +114,21 @@ cards:
     cards:
       - type: custom:button-card
         template:
-          - header_light
+          - header_light_bw
         entity: light.kitchentablelight
         name: Køkken Bord
       - type: custom:button-card
         template:
-          - header_light
+          - header_light_color
         name: Køkken Loft
       - type: custom:button-card
         template:
-          - header_light
+          - header_light_color
         name: Spisekrog
         entity: light.ikea_of_sweden_tradfri_bulb_e27_cws_806lm_light
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
         name: Korridor
   - type: horizontal-stack
     cards:
@@ -139,12 +139,10 @@ cards:
         entity: binary_sensor.bad_ms01_iaszone
       - type: custom:button-card
         template:
-          - header_light
+          - header_blue
       - type: custom:button-card
         template:
-          - header_light
-        name: Høj<br>Lav<br>Nat
+          - header_blue
       - type: custom:button-card
         template:
-          - header_pir
-```
+          - header_blue```
