@@ -133,7 +133,7 @@ action:
           - condition: trigger
             id: Motion Start
         sequence:
-          - service: light.toggle
+          - service: light.turn_on
             data:
               brightness_pct: 1
               kelvin: 2000
