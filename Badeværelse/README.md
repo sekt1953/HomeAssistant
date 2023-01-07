@@ -8,76 +8,47 @@ I mit badeværelse har jeg en loft lampe fra LIDL:
   * Model-nr.: 14153706L / 14153806L
   * Zigbee ID: TS0504B | _TZ3210_sroezl0s
 
-og en bevægelse sensor fra Sonoff:
+En bevægelse sensor fra Sonoff:
 
 * Sonoff Motion Sensor
+  * ![](./Images/SNZB-03.png)
   * Model: SNZB-03
   * Battery Model: CR2450 3V
 
-### Lovelace for Badeværelse lys images
+En Trykkontakt fra Sonoff:
 
-![Lovelace_Bad_2022-10-19_12-41-10.png](./Images/Lovelace_Bad_2022-10-19_12-41-10.png)
+* Sonoff Wireless Switch
+  * Model: SNZB-01
+  * Battery Model: CR2450 3V
 
-### Lovelace for Badeværelse lys i YAML format
+## Lovelace for Badeværelse lys 
+
+![button-card](./Images/Sk%C3%A6rmbillede%20fra%202023-01-07%2021-54-41.png)
+
+### custom:button-card for Bath
 
 ```yaml
-square: false
-columns: 1
-type: grid
-cards:
-  - type: entities
-    entities:
-      - entity: light.tz3210_sroezl0s_ts0504b_light
-        name: Bad Loftlys
-        secondary_info: brightness
-      - entity: button.tz3210_sroezl0s_ts0504b_identifybutton
-    title: Badeværelse
-    state_color: true
-  - type: entities
-    entities:
-      - entity: binary_sensor.ewelink_ms01_iaszone
-        name: Bad Motion Sensor
-        secondary_info: last-changed
-      - entity: button.ewelink_ms01_identifybutton
-      - entity: sensor.ewelink_ms01_battery
-    state_color: true
-  - type: entities
-    entities:
-      - entity: timer.badlys
-        secondary_info: last-changed
+type: custom:button-card
+template:
+  - header_pir
+name: Bad
+entity: binary_sensor.bad_ms01_iaszone
 ```
 
-### Helpers - (Settings -> Device & Services -> Helpers)
+```yaml
+type: custom:button-card
+template:
+  - header_light_color
+entity: light.tz3210_sroezl0s_ts0504b_light
+name: Bad loft
+icon: mdi:ceiling-light
+```
+
+## Helpers - (Settings -> Device & Services -> Helpers)
 
 ![Helper_BadLysTimeout_2022-10-21_09-40-01.png](./Images/Helper_BadLysTimeout_2022-10-21_09-40-01.png)
 
-### Automation - Edit in visual editor
-
-![Automations_2022-10-19_12-48-11.png](./Images/Automations_2022-10-19_12-48-11.png)
-
-#### Triggers
-
-* YouTube Video om brug af triggers IDs [How to use Trigger IDs in Home Assistant - Tutorial](https://www.youtube.com/watch?v=fE_MYcXYwMI&t=4s)
-
-![Automations_Triggers_2022-10-19_12-48-32.png](./Images/Automations_Triggers_2022-10-19_12-48-32.png)  
-
-![Automations_Triggers_2022-10-19_12-48-50.png](./Images/Automations_Triggers_2022-10-19_12-48-50.png)
-
-![Automations_Triggers_2022-10-19_12-49-01.png](./Images/Automations_Triggers_2022-10-19_12-49-01.png)
-
-#### Conditions
-
-![](./Images/Automations_Conditions_2022-10-19_15-22-30.png)
-
-#### Actions
-
-![Automations_Actions_Option1_2022-10-19_13-48-38.png](./Images/Automations_Actions_Option1_2022-10-19_13-48-38.png)  
-
-![Automations_Actions_Option2_2022-10-21_09-21-51.png](./Images/Automations_Actions_Option2_2022-10-21_09-21-51.png)  
-
-![Automations_Actions_Option3_2022-10-19_13-52-07.png](./Images/Automations_Actions_Option3_2022-10-19_13-52-07.png)  
-
-#### Automation - Edit in YAML
+## Automation - Bad lys OnOff
 
 ```yaml
 alias: Bad lys OnOff
@@ -86,20 +57,61 @@ trigger:
   - type: motion
     platform: device
     device_id: 19ccdf753c20729cd6262a5743b0e357
-    entity_id: binary_sensor.ewelink_ms01_iaszone
+    entity_id: binary_sensor.bad_ms01_iaszone
     domain: binary_sensor
     id: Motion Start
   - platform: event
     event_type: timer.finished
     event_data:
-      entity_id: timer.badlys
+      entity_id: timer.bad_lys_timeout
     id: Timer Bad
   - type: no_motion
     platform: device
     device_id: 19ccdf753c20729cd6262a5743b0e357
-    entity_id: binary_sensor.ewelink_ms01_iaszone
+    entity_id: binary_sensor.bad_ms01_iaszone
     domain: binary_sensor
     id: Motion Stop
+  - type: battery_level
+    platform: device
+    device_id: 19ccdf753c20729cd6262a5743b0e357
+    entity_id: sensor.bad_ms01_battery
+    domain: sensor
+    below: 10
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+    id: Battery Alarm
+  - platform: event
+    event_type: zha_event
+    event_data:
+      device_ieee: 00:12:4b:00:25:39:57:dd
+      unique_id: 00:12:4b:00:25:39:57:dd:1:0x0006
+      device_id: 16aae22d9738cc081e05ed81347d9ffe
+      endpoint_id: 1
+      cluster_id: 6
+      command: toggle
+    id: SNZB-01 Toggle
+  - platform: event
+    event_type: zha_event
+    event_data:
+      device_ieee: 00:12:4b:00:25:39:57:dd
+      unique_id: 00:12:4b:00:25:39:57:dd:1:0x0006
+      device_id: 16aae22d9738cc081e05ed81347d9ffe
+      endpoint_id: 1
+      cluster_id: 6
+      command: "on"
+    id: SNZB-01 On
+  - platform: event
+    event_type: zha_event
+    event_data:
+      device_ieee: 00:12:4b:00:25:39:57:dd
+      unique_id: 00:12:4b:00:25:39:57:dd:1:0x0006
+      device_id: 16aae22d9738cc081e05ed81347d9ffe
+      endpoint_id: 1
+      cluster_id: 6
+      command: "off"
+    id: SNZB-01 Off
 condition: []
 action:
   - choose:
@@ -107,15 +119,16 @@ action:
           - condition: trigger
             id: Motion Start
         sequence:
-          - type: turn_on
-            device_id: 846853d182c407d6ddd2e4f6cbd3dbb0
-            entity_id: light.tz3210_sroezl0s_ts0504b_light
-            domain: light
-            brightness_pct: 1
+          - service: light.toggle
+            data:
+              brightness_pct: 1
+              kelvin: 2000
+            target:
+              entity_id: light.tz3210_sroezl0s_ts0504b_light
           - service: timer.cancel
             data: {}
             target:
-              entity_id: timer.badlys
+              entity_id: timer.bad_lys_timeout
       - conditions:
           - condition: trigger
             id: Motion Stop
@@ -124,7 +137,7 @@ action:
             data:
               duration: "30"
             target:
-              entity_id: timer.badlys
+              entity_id: timer.bad_lys_timeout
       - conditions:
           - condition: trigger
             id: Timer Bad
@@ -133,5 +146,65 @@ action:
             device_id: 846853d182c407d6ddd2e4f6cbd3dbb0
             entity_id: light.tz3210_sroezl0s_ts0504b_light
             domain: light
+      - conditions:
+          - condition: trigger
+            id: Battery Alarm
+        sequence:
+          - service: notify.mobile_app_sm_a226b
+            data:
+              title: Battery Alarm
+              message: Pir Badeværelse er under 10%
+      - conditions:
+          - condition: trigger
+            id: SNZB-01 Toggle
+        sequence:
+          - if:
+              - condition: state
+                entity_id: binary_sensor.bad_ms01_iaszone
+                state: "off"
+            then:
+              - service: light.toggle
+                data:
+                  kelvin: 2000
+                  brightness_pct: 1
+                target:
+                  entity_id: light.tz3210_sroezl0s_ts0504b_light
+          - service: timer.start
+            data:
+              duration: "30"
+            target:
+              entity_id: timer.bad_lys_timeout
+      - conditions:
+          - condition: trigger
+            id: SNZB-01 On
+        sequence:
+          - service: light.turn_on
+            data:
+              kelvin: 2000
+              brightness_pct: 48
+            target:
+              entity_id: light.tz3210_sroezl0s_ts0504b_light
+          - service: timer.start
+            data:
+              duration: "30"
+            target:
+              entity_id: timer.bad_lys_timeout
+      - conditions:
+          - condition: trigger
+            id: SNZB-01 Off
+        sequence:
+          - service: light.turn_on
+            data:
+              xy_color:
+                - 0.5
+                - 0.3
+              brightness_pct: 1
+            target:
+              entity_id: light.tz3210_sroezl0s_ts0504b_light
+          - service: timer.start
+            data:
+              duration: "30"
+            target:
+              entity_id: timer.bad_lys_timeout
 mode: single
 ```
