@@ -44,6 +44,20 @@ name: Bad loft
 icon: mdi:ceiling-light
 ```
 
+```yaml
+type: custom:button-card
+template:
+  - header_light_color
+entity: light.tz3210_sroezl0s_ts0504b_light
+name: Bad loft
+icon: mdi:ceiling-light
+label: |
+  [[[
+    var bri = parseInt(states['light.tz3210_sroezl0s_ts0504b_light'].attributes.brightness*100/255);
+    return 'Brightness: ' + (bri ? bri : '0') + '%';
+  ]]]
+```
+
 ## Helpers - (Settings -> Device & Services -> Helpers)
 
 ![Helper_BadLysTimeout_2022-10-21_09-40-01.png](./Images/Helper_BadLysTimeout_2022-10-21_09-40-01.png)
