@@ -12,6 +12,10 @@
       * [Se hvordan du opdater](https://zigbee.blakadder.com/Lidl_TYGWZ-01.html "blakadder")
       * [Ny Software for opdatering](https://github.com/banksy-git/lidl-gateway-freedom "banksy-git")
     * [SilverCrest Outdoor Plug](https://zigbee.blakadder.com/Lidl_HG06619.html)
+    * [SilverCrest Smart Plug DK Model HG06337-DK manufactured by Lidl Zigbee ID: TS011F | _TZ3000_upjrsxh1](https://zigbee.blakadder.com/Lidl_HG06337-DK.html)
+    * [SilverCrest Doorbell Model HG06668 manufactured by Lidl Zigbee ID: TS0211 | _TZ1800_ladpngd](https://zigbee.blakadder.com/Lidl_HG06668.html)
+    * [Silvercrest Radiator Valve Controller Model TVR01 manufactured by Lidl Zigbee ID: TS0601 | _TZE200_chyvmhay](https://zigbee.blakadder.com/Lidl_TVR01.html)
+
   * Sonoff
     * [Sonoff Motion Sensor, Model: SNZB-03 (timeout 2min)](https://www.proshop.dk/Smart-Home/Sonoff-SNZB-03-Motion-sensor/3084016?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricesite)
     * [Sonoff Zigbee Wireless Switch, Model: SNZB-01](https://www.proshop.dk/Smart-Home/Sonoff-Zigbee-Wireless-Switch/3084021?utm_source=pricerunner&utm_medium=cpc&utm_campaign=pricesite)
