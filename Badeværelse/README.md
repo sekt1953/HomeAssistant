@@ -133,12 +133,31 @@ action:
           - condition: trigger
             id: Motion Start
         sequence:
-          - service: light.turn_on
-            data:
-              brightness_pct: 1
-              kelvin: 2000
-            target:
-              entity_id: light.tz3210_sroezl0s_ts0504b_light
+          - if:
+              - condition: state
+                entity_id: input_boolean.sleep
+                state: "on"
+            then:
+              - service: light.turn_on
+                data:
+                  xy_color:
+                    - 0.7
+                    - 0.3
+                  brightness_pct: 1
+                target:
+                  entity_id: light.tz3210_sroezl0s_ts0504b_light
+            else:
+              - if:
+                  - condition: state
+                    entity_id: binary_sensor.nosun
+                    state: "on"
+                then:
+                  - service: light.turn_on
+                    data:
+                      kelvin: 2000
+                      brightness_pct: 1
+                    target:
+                      entity_id: light.tz3210_sroezl0s_ts0504b_light
           - service: timer.cancel
             data: {}
             target:
