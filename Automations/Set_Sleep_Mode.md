@@ -72,6 +72,7 @@ icon: mdi:sleep
 ## Helpers Group Light 
 
 * [Managing groups](https://www.home-assistant.io/integrations/group/#managing-groups)
+  * [BINARY SENSOR, LIGHT, AND SWITCH GROUPS](https://www.home-assistant.io/integrations/group/#binary-sensor-light-and-switch-groups)
 
 ![Managing groups](./Images/Sk%C3%A6rmbillede%20fra%202023-01-09%2022-24-05.png)
 
