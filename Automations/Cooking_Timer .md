@@ -117,6 +117,8 @@ icon: mdi:timer
 
 ### Kitchen:
 
+![kitchen](./Images/Sk%C3%A6rmbillede%20fra%202023-01-11%2012-15-48.png)
+
 #### UI-Template – button_card_templates: 
 * header_nocard
 
