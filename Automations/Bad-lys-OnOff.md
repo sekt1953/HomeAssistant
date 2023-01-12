@@ -1,64 +1,6 @@
-# Badeværelse
+# Bad
 
-## Lys automatik
-
-I mit badeværelse har jeg en loft lampe fra LIDL:
-
-* LIVARNO Smart Led Ceiling Light
-  * Model-nr.: 14153706L / 14153806L
-  * Zigbee ID: TS0504B | _TZ3210_sroezl0s
-
-En bevægelse sensor fra Sonoff:
-
-* Sonoff Motion Sensor
-  * ![](./Images/SNZB-03.png)
-  * Model: SNZB-03
-  * Battery Model: CR2450 3V
-
-En Trykkontakt fra Sonoff:
-
-* Sonoff Wireless Switch
-  * Model: SNZB-01
-  * Battery Model: CR2450 3V
-
-## Lovelace for Badeværelse lys 
-
-![button-card](./Images/Sk%C3%A6rmbillede%20fra%202023-01-07%2021-54-41.png)
-
-### custom:button-card for Bath
-
-```yaml
-type: custom:button-card
-template:
-  - header_pir
-name: Bad
-entity: binary_sensor.bad_ms01_iaszone
-```
-
-```yaml
-type: custom:button-card
-template:
-  - header_light_color
-entity: light.tz3210_sroezl0s_ts0504b_light
-name: Bad loft
-icon: mdi:ceiling-light
-```
-
-```yaml
-type: custom:button-card
-template:
-  - header_light_color
-entity: light.tz3210_sroezl0s_ts0504b_light
-name: Bad loft
-icon: mdi:ceiling-light
-label: |
-  [[[
-    var bri = parseInt(states['light.tz3210_sroezl0s_ts0504b_light'].attributes.brightness*100/255);
-    return 'Brightness: ' + (bri ? bri : '0') + '%';
-  ]]]
-```
-
-## Helpers - (Settings -> Device & Services -> Helpers)
+## Helpers - Bad lys Timeout
 
 ![Helper_BadLysTimeout_2022-10-21_09-40-01.png](./Images/Helper_BadLysTimeout_2022-10-21_09-40-01.png)
 
@@ -267,4 +209,115 @@ action:
                 target:
                   entity_id: timer.bad_lys_timeout
 mode: single
+```
+
+## Lovelace
+
+### Template
+
+```yaml
+button_card_templates:
+```
+
+### header_nocard
+
+```yaml
+  header_nocard:
+    aspect_ratio: 1.3
+```
+
+### header_0
+
+```yaml
+  header_0:
+    template: header_nocard
+    color_type: card
+    haptic: success
+```
+
+### header_blue
+
+```yaml
+  header_blue:
+    template: header_0
+    color: blue
+    show_last_changed: false
+    show_state: false
+    state:
+      - value: 'off'
+        styles:
+          card:
+            - background-color: blue
+            - filter: opacity(55%)
+            - '--mdc-ripple-color': yellow
+            - '--mdc-ripple-press-opacity': 0.5
+            - font-size: 14px
+          icon:
+            - color: gray
+          label:
+            - font-size: 0px
+            - color: yellow
+      - value: 'on'
+        styles:
+          card:
+            - background-color: '#000044'
+            - color: yellow
+            - '--mdc-ripple-color': yellow
+            - '--mdc-ripple-press-opacity': 0.5
+            - font-size: 15px
+          label:
+            - font-size: 11px
+            - color: yellow
+```
+
+### header_pir
+
+```yaml
+  header_pir:
+    template: header_blue
+    state:
+      - value: 'on'
+        styles:
+          icon:
+            - color: yellow
+```
+
+### Template
+
+```yaml
+
+```
+### View
+
+![](./Images/Sk%C3%A6rmbillede%20fra%202023-01-12%2016-10-18.png)
+
+```yaml
+  - type: horizontal-stack
+    cards:
+      - type: custom:button-card
+        template:
+          - header_pir
+        name: Bad
+        entity: binary_sensor.bad_ms01_iaszone
+      - type: custom:button-card
+        template:
+          - header_light_color
+        entity: light.tz3210_sroezl0s_ts0504b_light
+        name: Bad loft
+        icon: mdi:ceiling-light
+        label: |
+          [[[
+            var bri = parseInt(states['light.tz3210_sroezl0s_ts0504b_light'].attributes.brightness*100/255);
+            return 'Brightness: ' + (bri ? bri : '0') + '%';
+          ]]]
+      - type: custom:button-card
+        template:
+          - header_blue
+        entity: null
+        name: null
+      - type: custom:button-card
+        template:
+          - header_blue
+        entity: null
+        name: null
 ```
