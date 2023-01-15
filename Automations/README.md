@@ -2,6 +2,8 @@
 
 ## Flow diagram
 
+### Light On/Off - High/Low/Red
+
 ![Flow diagram](./Images/Sk%C3%A6rmbillede%20fra%202023-01-15%2011-40-56.png)
 
 ## Files
