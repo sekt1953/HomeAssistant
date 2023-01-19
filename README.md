@@ -43,15 +43,13 @@
 * ESP32 til egen fremstillet lysstyring via ESPHome
 * Home Assistant OS, Supervised version
 
-## 1. Installation af Home Assistant OS, Supervised version i en Argon One M.2 Case
+## 1. Argon One M.2 Case
 
-### [link til mstedet hvor jeg først skrev om dette](https://github.com/mstedet/ESP32-2020#argon-one-m2---home-assistant-os-6x--supervised-version)
-
-* Opdaterer RPI Firmware til nyeste
-* Boot RPI fra M.2 disk
-* Installer Home Assistant OS, Supervised version
 * [Enable I2C](./Enable_I2C/README.md)
-* Installer Argon One active cooling
+  * [Enable I2C with an SD card reader](./Enable_I2C/README.md#enable-i2c-with-an-sd-card-reader)
+    * [Argon One Active Cooling & Argon One Active Linear Cooling Addon](./Enable_I2C/README.md#argon-one-active-cooling--argon-one-active-linear-cooling-addon)
+  * [Enable I2C via Home Assistant Operating System Terminal](./Enable_I2C/README.md#enable-i2c-via-home-assistant-operating-system-terminal)
+  * [the old way](https://github.com/mstedet/ESP32-2020#argon-one-m2---home-assistant-os-6x--supervised-version)
 
 ## 2. Installer Add-ons
 
