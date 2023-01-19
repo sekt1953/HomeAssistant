@@ -11,9 +11,9 @@ Home Assistant using the Home Assistant Operating System which is a managed envi
 
 ### Access the boot partition
 
-You will need:
-* SD card reader 
-* SD card with Home Assistant Operating System flashed on it
+* You will need:
+  * SD card reader 
+  * SD card with Home Assistant Operating System flashed on it
 
 Shutdown/turn-off your Home Assistant installation and unplug the SD card. Plug the SD card into an SD card reader and find a drive/file system named hassos-boot. The file system might be shown/mounted automatically. If not, use your operating systems disk management utility to find the SD card reader and make sure the first partition is available.
 
@@ -40,10 +40,11 @@ dtparam=i2c_arm=on
 * On startup, the **hassos-config.service** will automatically pickup the new **rpi-i2c.conf** configuration.
 * Another reboot might be necessary to make sure the just imported **rpi-i2c.conf** is present at boot time.
 
-### Notat:
+### Argon One Active Cooling & Argon One Active Linear Cooling Addon
 
-ArgonOne Active Cooling
+[Argon One Active Cooling Repository Here: ](https://community.home-assistant.io/t/argon-one-active-cooling-argon-one-active-linear-cooling-addon/262598)
 
+My settings:
 ```txt
 CorF : C
 LowRange: 35
