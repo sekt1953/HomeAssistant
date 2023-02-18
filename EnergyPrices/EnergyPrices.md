@@ -10,6 +10,9 @@
   * Video Tutorial: [How to Track DYNAMIC ENERGY PRICES in Home Assistant NOW!](https://www.youtube.com/watch?v=NFJ510uhswY "Smart Home Junkie")
 * [Apexcharts-card](https://github.com/RomRider/apexcharts-card)
   * [ApexCharts Tutorial: Advanced Graphs For Your Home Assistant UI](https://smarthomescene.com/guides/apexcharts-card-advanced-graphs-for-your-home-assistant-ui/)
+* [elspotpris.dk](https://elspotpris.dk/live)
+  * [GitHub](https://github.com/rndfm/elspotpris)
+* [Vores Elnet](https://www.voreselnet.dk/priser/nettariffer)
 
 ## HACS
 
