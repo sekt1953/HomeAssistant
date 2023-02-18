@@ -1,5 +1,9 @@
 # ENERGY PRICES
 
+|Total & Raw|Transport & Tax|
+|:---:|:---:|
+|![Total ](./Images/Sk%C3%A6rmbillede%20fra%202023-02-18%2015-25-10.png)|![](./Images/Sk%C3%A6rmbillede%20fra%202023-02-18%2015-25-26.png)|
+
 ## Kilder:
 
 * [Nordpool Integration](https://github.com/custom-components/nordpool)
