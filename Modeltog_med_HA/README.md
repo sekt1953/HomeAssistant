@@ -1,8 +1,8 @@
 # Modeltog med Home Assistant
 
-## Lovelace
-
-![tRACK](./Image/Track%2000%20-.%2015.png)
+|Lovelace|Prototype|
+|:---:|:---:|
+|![tRACK](./Image/Track%2000%20-.%2015.png)|![](./Image/20230310_212205.jpg) |
 
 ## PCB
 
