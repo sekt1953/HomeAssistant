@@ -25,6 +25,8 @@
   * [PCF8574 I/O Expander](https://esphome.io/components/pcf8574.html?highlight=pcf8574)
     * [I²C Bus](https://esphome.io/components/i2c.html#i2c)
     * [GPIO Binary Sensor](https://esphome.io/components/binary_sensor/gpio.html)
+* PCB
+  * [Rademacher WR-Typ 922 Printplade](https://www.conradelektronik.dk/p/rademacher-wr-typ-922-printplade-til-eksperimenter-hardt-papir-l-x-b-160-mm-x-100-mm-35-m-rastermal-254-mm-indhold-521214)
 
 ## Kode
 
