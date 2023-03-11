@@ -34,6 +34,12 @@ Reconect usb-device (ESP32) derefter.
 |:--:|:--:|
 |![PC817_Breadboard](./Image/PC817_Breadboard.png)|![PC817_Schematic](./Image/PC817_Schematic.png)
 
+### ESP8266-01 16 input
+
+|Breadboard|Schematic|
+|:--:|:--:|
+|![ESP32_Breadboard](./Image/ESP-01_Breadboard.png)|![ESP32_Schematic](./Image/ESP-01_Schematic.png)|
+
 ## DataSheet
 
 * ESPHome
