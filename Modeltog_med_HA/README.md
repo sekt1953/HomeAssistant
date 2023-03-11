@@ -1,5 +1,21 @@
 # Modeltog med Home Assistant
 
+## USB -> Serial CH3240-Problem
+
+* CH340 SE HER !!!
+  * [Unable to use USB dongle based on USB-serial converter chip](https://unix.stackexchange.com/questions/670636/unable-to-use-usb-dongle-based-on-usb-serial-converter-chip)
+    * Dette virkede for mig
+
+Disable service
+The BRLTTY service is launched by the brltty.path service. This service can be completely prevented from ever starting by running by doing the following:
+
+```code
+sudo systemctl mask brltty.path
+Created symlink /etc/systemd/system/brltty.path → /dev/null.
+```
+
+Reconect usb-device (ESP32) derefter.
+
 |Lovelace|Prototype|
 |:---:|:---:|
 |![tRACK](./Image/Track%2000%20-.%2015.png)|![](./Image/20230310_212205.jpg) |

@@ -137,6 +137,10 @@ I use [**custom-cards/button-card**](https://github.com/custom-cards/button-card
 
 ## 10. ESPHome projecter
 
+### USB -> Serial
+* CH340
+  * [Unable to use USB dongle based on USB-serial converter chip](https://unix.stackexchange.com/questions/670636/unable-to-use-usb-dongle-based-on-usb-serial-converter-chip)
+
 * Min lysstyring
 * ESP32-Cam 
 * Klima Sensor
